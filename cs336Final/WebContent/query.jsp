@@ -39,15 +39,15 @@
 			//make a column
 			out.print("<td>");
 			//print out column header
-			out.print("bar");
+			out.print("state");
 			out.print("</td>");
 			//make a column
 			out.print("<td>");
-			out.print("beer");
+			out.print("gun law rank");
 			out.print("</td>");
 			//make a column
 			out.print("<td>");
-			out.print("price");
+			out.print("grade");
 			out.print("</td>");
 			out.print("</tr>");
 
@@ -58,15 +58,15 @@
 				//make a column
 				out.print("<td>");
 				//Print out current bar name:
-				out.print(result.getString("bar"));
+				out.print(result.getString("State"));
 				out.print("</td>");
 				out.print("<td>");
 				//Print out current beer name:
-				out.print(result.getString("beer"));
+				out.print(result.getString("Gun_Law_Rank"));
 				out.print("</td>");
 				out.print("<td>");
 				//Print out current price
-				out.print(result.getString("price"));
+				out.print(result.getString("Grade"));
 				out.print("</td>");
 				out.print("</tr>");
 
