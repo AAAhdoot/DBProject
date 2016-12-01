@@ -40,7 +40,7 @@
 			//make a column
 			out.print("<td>");
 			//print out column header
-			out.print("name");
+			out.print("State");
 			out.print("</td>");
 			//make a column
 			out.print("<td>");
@@ -48,7 +48,7 @@
 			if (entity.equals("beers"))
 				out.print("manf");
 			else
-				out.print("addr");
+				out.print("Population");
 			out.print("</td>");
 			out.print("</tr>");
 
