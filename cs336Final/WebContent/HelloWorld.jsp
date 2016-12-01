@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Beer World</title>
+<title>CS336 Final Project</title>
 </head>
 <body>
 Hello World1 <!-- the usual HTML way -->
@@ -21,9 +21,9 @@ Hello World1 <!-- the usual HTML way -->
 <form method="get" action="show.jsp" enctype=text/plain>
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
-  <input type="radio" name="command" value="beers"/> Let's look at demographic data by state.
+  <input type="radio" name="command" value="StateInfo"/> Let's look at demographic data by state.
   <br>
-  <input type="radio" name="command" value="bars"/>Let's look at gun violence by state.
+  <input type="radio" name="command" value="Murders"/>Let's look at gun violence by state.
     <!-- when the radio for bars is chosen, then 'command' will have value 
      | 'bars', in the show.jsp file, when you access request.parameters -->
   <br>
