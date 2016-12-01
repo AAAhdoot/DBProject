@@ -21,9 +21,9 @@ Hello World1 <!-- the usual HTML way -->
 <form method="get" action="show.jsp" enctype=text/plain>
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
-  <input type="radio" name="command" value="beers"/>Let's have a beer!
+  <input type="radio" name="command" value="beers"/> Let's look at demographic data by state.
   <br>
-  <input type="radio" name="command" value="bars"/>Let's go to a bar!
+  <input type="radio" name="command" value="bars"/>Let's look at gun violence by state.
     <!-- when the radio for bars is chosen, then 'command' will have value 
      | 'bars', in the show.jsp file, when you access request.parameters -->
   <br>
@@ -50,7 +50,7 @@ Alternatively, lets type in a bar and a beer and  a price limit.
 	</form>
 <br>
 
-Or we can query the beers with price:
+Let's query the states by grade:
 <br>
 	<form method="query" action="query.jsp">
 		<select name="price" size=1>
