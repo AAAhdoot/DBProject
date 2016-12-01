@@ -55,6 +55,14 @@ Let's query the states by grade:
 	<form method="query" action="query.jsp">
 		<select name="Grade" size=1>
 			<option value="A-">A-</option>
+			<option value="B+">B+</option>
+			<option value="B">B</option>
+			<option value="B-">B-</option>
+			<option value="C+">C+</option>
+			<option value="C">C</option>
+			<option value="C-">C-</option>
+			<option value="D">D</option>
+			<option value="D-">D-</option>
 			<option value="F">F</option>
 		</select>&nbsp;<br> <input type="submit" value="submit">
 	</form>
