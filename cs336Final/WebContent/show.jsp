@@ -59,14 +59,14 @@
 				//make a column
 				out.print("<td>");
 				//Print out current bar or beer name:
-				out.print(result.getString("name"));
+				out.print(result.getString("State"));
 				out.print("</td>");
 				out.print("<td>");
 				//Print out current bar/beer additional info: Manf or Address
 				if (entity.equals("beers"))
 					out.print(result.getString("manf"));
 				else
-					out.print(result.getString("addr"));
+					out.print(result.getString("Population"));
 				out.print("</td>");
 				out.print("</tr>");
 
