@@ -16,7 +16,7 @@
 		try {
 
 			//Create a connection string
-		String url = "jdbc:mysql://rds-mysql-arielashni.c87yzfqjfzoj.us-west-2.rds.amazonaws.com:3306/BarBeerDrinkerSample";
+		String url = "jdbc:mysql://rds-mysql-arielashni.c87yzfqjfzoj.us-west-2.rds.amazonaws.com:3306/DBProject";
 		//Load JDBC driver - the interface standardizing the connection procedure. Look at WEB-INF\lib for a mysql connector jar file, otherwise it fails.
 		Class.forName("com.mysql.jdbc.Driver");
 
@@ -25,9 +25,9 @@
 			//Create a SQL statement
 			Statement stmt = con.createStatement();
 			//Get the combobox from the HelloWorld.jsp
-			String entity = request.getParameter("price");
+			String entity = request.getParameter("Grade");
 			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
-			String str = "SELECT * FROM sells WHERE price <= " + entity;
+			String str = "SELECT * FROM GunControlLaws WHERE GRADE = " + entity;
 			//Run the query against the database.
 			ResultSet result = stmt.executeQuery(str);
 

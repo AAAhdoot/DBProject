@@ -53,10 +53,9 @@ Alternatively, lets type in a bar and a beer and  a price limit.
 Let's query the states by grade:
 <br>
 	<form method="query" action="query.jsp">
-		<select name="price" size=1>
-			<option value="3.0">$3.0 and under</option>
-			<option value="5.0">$5.0 and under</option>
-			<option value="8.0">$8.0 and under</option>
+		<select name="Grade" size=1>
+			<option value="A-">A-</option>
+			<option value="F">F</option>
 		</select>&nbsp;<br> <input type="submit" value="submit">
 	</form>
 <br>
