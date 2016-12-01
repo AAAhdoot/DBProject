@@ -25,7 +25,7 @@
 			//Create a SQL statement
 			Statement stmt = con.createStatement();
 			//Get the combobox from the HelloWorld.jsp
-			String entity = request.getParameter("GunControlLaws");
+			String entity = request.getParameter("Grade");
 			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
 			String str = "SELECT * FROM GunControlLaws WHERE Grade = " + entity;
 			//Run the query against the database.
