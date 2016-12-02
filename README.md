@@ -12,8 +12,8 @@ under #1
 - clean up how we view murders
 - add option for gun control laws & display
 - add rest of columns for results in query by grade
-- states that don't require background checks ( on this now - ASHNI)
-- states that do require background checks (on this now - ASHNI)
+- (DONE) states that don't require background checks ( on this now - ASHNI)
+- (DONE) states that do require background checks (on this now - ASHNI)
 - look into charts & things
 - (DONE) remove unnecessary grade options from grade drop-down - ASHNI
 - look into queries that involve joins
