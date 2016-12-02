@@ -22,17 +22,17 @@ different types of queries:
 ----------------------------
 - state by state comparison
 - political affiliation v background checks
-- deaths v mental health access by state
-- poverty level v deaths
+- murders/gun_death_rank_rate v mental health access by state (queries written)
+- poverty level v murders
 - poverty level v political affiliation
-- unemployment v deaths
-- political affiliation v deaths
+- unemployment v murders
+- political affiliation v murders
 - show political affiliation against gun law scorecard levels
 - political affiliation v state
-- percent gun owners v deaths
+- percent gun owners v murders
 - percent gun owners v political affiliation
 - percent gun owners v poverty level and income
-- unemployment v percent gun owners v deaths
+- unemployment v percent gun owners v murders
 - handgun murder per state (ashni)
 - shotgun murder per state
 - etc.. lol
