@@ -33,8 +33,8 @@ different types of queries:
 - percent gun owners v political affiliation
 - percent gun owners v poverty level and income
 - unemployment v percent gun owners v deaths
-- handgun murder per state
-- shotgun murder per state
+- handgun murder per state (ashni)
+- shotgun murder per state (ashni)
 - etc.. lol
 - most dangerous states limit, asc, desc, etc.
 - safest states
