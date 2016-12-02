@@ -60,7 +60,7 @@
 				out.print("</td>");
 				out.print("<td>");
 				//Print out current beer name:
-				out.print(result.getString("Murders _by_gun"));
+				out.print(result.getString("Gun_murders"));
 				out.print("</td>");
 				
 				out.print("</tr>");
