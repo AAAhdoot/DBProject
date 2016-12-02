@@ -15,7 +15,7 @@ under #1
 - states that don't require background checks
 - states that do require background checks
 - look into charts & things
-- remove unnecessary grade options from grade drop-down
+- remove unnecessary grade options from grade drop-down - ASHNI/DONE
 - look into queries that involve joins
 
 different types of queries:
