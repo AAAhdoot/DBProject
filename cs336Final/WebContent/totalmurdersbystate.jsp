@@ -27,10 +27,10 @@
 			//Get the combobox from the HelloWorld.jsp
 			String entity = request.getParameter("State");
 			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
-			String str = "SELECT * FROM Murders WHERE State = " + entity;
+			String str = "SELECT * FROM Murders WHERE State = '" + entity + "'" ;
 			//Run the query against the database.
 			ResultSet result = stmt.executeQuery(str);
-
+			
 			//Make an HTML table to show the results in:
 			out.print("<table>");
 
@@ -62,7 +62,7 @@
 				//Print out current beer name:
 				out.print(result.getString("Murders _by_gun"));
 				out.print("</td>");
-				o
+				
 				out.print("</tr>");
 
 			}
