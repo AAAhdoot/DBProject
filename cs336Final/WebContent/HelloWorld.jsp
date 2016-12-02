@@ -120,7 +120,6 @@ Let's query the states by grade. (Note: The grades listed below are the only gra
 			<option value="B+">B+</option>
 			<option value="B">B</option>
 			<option value="B-">B-</option>
-			<option value="C+">C+</option>
 			<option value="C">C</option>
 			<option value="C-">C-</option>
 			<option value="D">D</option>
