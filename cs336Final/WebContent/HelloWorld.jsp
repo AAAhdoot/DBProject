@@ -112,6 +112,16 @@ Alternatively, lets type in a bar and a beer and  a price limit.
 	</form>
 <br>
 
+Show me all the states that either do or do not require background checks.
+<br>
+	<form method="query" action="backgroundcheck.jsp">
+		<select name="Checker" size=1>
+			<option value="no">Do not</option>
+			<option value="yes">Do</option>
+		</select>&nbsp;<br> <input type="submit" value="submit">
+	</form>
+<br>
+
 Let's query the states by grade. (Note: The grades listed below are the only grades that states have received in the past year.)
 <br>
 	<form method="query" action="query.jsp">
