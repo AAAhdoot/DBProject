@@ -43,12 +43,10 @@
 			out.print("</td>");
 			//make a column
 			out.print("<td>");
-			out.print("gun law rank");
+			out.print("total murders by gun");
 			out.print("</td>");
 			//make a column
-			out.print("<td>");
-			out.print("grade");
-			out.print("</td>");
+			
 			out.print("</tr>");
 
 			//parse out the results
@@ -62,12 +60,9 @@
 				out.print("</td>");
 				out.print("<td>");
 				//Print out current beer name:
-				out.print(result.getString("Gun_Law_Rank"));
+				out.print(result.getString("Murders _by_gun"));
 				out.print("</td>");
-				out.print("<td>");
-				//Print out current price
-				out.print(result.getString("Grade"));
-				out.print("</td>");
+				o
 				out.print("</tr>");
 
 			}
