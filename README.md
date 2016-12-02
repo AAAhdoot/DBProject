@@ -36,8 +36,8 @@ different types of queries:
 - handgun murder per state (ashni)
 - shotgun murder per state
 - etc.. lol
-- most dangerous states limit, asc, desc, etc. (on this now)
-- safest states
+- (DONE) most dangerous states limit, asc, desc, etc. 
+- (DONE) safest states
 - aggregate
 - sum of deaths per region
 - average rate of unemployment by region
