@@ -91,25 +91,6 @@ Would you like to see the total number of murders by gun that occurred in your s
 	</form>
 <br>
 
-Alternatively, lets type in a bar and a beer and  a price limit.
-<br>
-	<form method="post" action="newBeer.jsp">
-	<table>
-	<tr>    
-	<td>Bar</td><td><input type="text" name="bar"></td>
-	</tr>
-	<tr>
-	<td>Beer</td><td><input type="text" name="beer"></td>
-	</tr>
-	<tr>
-	<td>Price</td><td><input type="text" name="price"></td>
-	</tr>
-	</table>
-	<br>
-	<input type="submit" value="submit">
-	</form>
-<br>
-
 Show me the top X states with the highest rates of gun violence.
 <br>
 	<form method="query" action="mostdanger.jsp">
