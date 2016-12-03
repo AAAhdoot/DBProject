@@ -154,5 +154,56 @@ Let's query the states by grade. (Note: The grades listed below are the only gra
 	</form>
 <br>
 
+Tri-Queries
+
+<br>
+	<form method="query" action="triquery.jsp">
+		<select name="StateInfo" size=1>
+		    <option value=""></option>
+			<option value="Population">Population</option>
+			<option value="Gun_Ownership">Gun Ownership</option>
+			<option value="Income_Level">Income Level</option>
+			<option value="Poverty_Level">Poverty Level</option>
+			<option value="Unemployment_Rate">Unemployment Rate</option>
+			<option value="Mental_Health_Access">Mental Health Access</option>
+			<option value="2016_Presidential_Election">2016 Presidential Election</option>
+			<option value="Governor">Governor</option>
+		</select>&nbsp;
+		<select name="Murders" size=1>
+			<option value=""></option>
+			<option value="Total_murders">Total Murders</option>
+			<option value="Gun_murders">Gun Murders</option>
+			<option value="Handguns">Handgun Murders</option>
+			<option value="Rifles">Rifle Murders</option>
+			<option value="Shotguns">Shotgun Murders</option>
+			<option value="Firearms">Firearm Murders</option>
+		</select>&nbsp;
+		<select name="GunControlLaws" size=1>
+			<option value=""></option>
+			<option value="Gun_Law_Rank">Gun Law Rank</option>
+			<option value="Grade">Grade</option> 
+			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
+			<option value="Background_Checks">Background Checks</option>
+		</select>&nbsp;
+		<br> <input type="submit" value="submit">
+	</form>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
