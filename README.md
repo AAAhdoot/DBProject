@@ -8,9 +8,9 @@ TODO
 
 under #1
 ----------
-- clean up how we view state info
-- clean up how we view murders
-- add option for gun control laws & display
+- (DONE) clean up how we view state info
+- (DONE) clean up how we view murders
+- (DONE) add option for gun control laws & display
 - add rest of columns for results in query by grade
 - (DONE) states that don't require background checks ( on this now - ASHNI)
 - (DONE) states that do require background checks (on this now - ASHNI)
