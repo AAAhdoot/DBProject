@@ -155,38 +155,23 @@ See selected information for a particular state. Choose up to three different at
 Show me the top X states with the highest rates of gun violence.
 <br>
 	<form method="query" action="ToporBottom.jsp">
-			<select name="StateInfo" size=1>
-		    <option value=""></option>
+			<select name="Attribute" size=1>
 			<option value="Population">Population</option>
 			<option value="Gun_Ownership">Gun Ownership</option>
 			<option value="Poverty_Level">Poverty Level</option>
 			<option value="Unemployment_Rate">Unemployment Rate</option>
 			<option value="Mental_Health_Access">Mental Health Access</option>
-		</select>&nbsp;
-		<select name="Order1" size=1>
-			<option value="ASC">Ascending</option>
-			<option value="DESC">Descending</option>
-		</select>&nbsp;<br>
-		<select name="Murders" size=1>
-			<option value=""></option>
+			<option value="Percent_No_Abortion_Provider">Difficulty of Abortion Access</option>
 			<option value="Total_murders">Total Murders</option>
 			<option value="Gun_murders">Gun Murders</option>
 			<option value="Handguns">Handgun Murders</option>
 			<option value="Rifles">Rifle Murders</option>
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
-		</select>&nbsp;
-			<select name="Order2" size=1>
-			<option value="ASC">Ascending</option>
-			<option value="DESC">Descending</option>
-		</select>&nbsp;<br>
-			<select name="GunControlLaws" size=1>
-			<option value=""></option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
-			<option value="Background_Checks">Background Checks</option>
 		</select>&nbsp;
-			<select name="Order3" size=1>
+		<select name="Order" size=1>
 			<option value="ASC">Ascending</option>
 			<option value="DESC">Descending</option>
 		</select>&nbsp;<br>
@@ -202,24 +187,6 @@ Show me the top X states with the highest rates of gun violence.
 			<option value="45">45</option>
 			<option value="50">50</option>
 		</select>&nbsp;<input type="submit" value="submit">
-	</form>
-<br>
-
-Show me the top X states with the lowest rates of gun violence.
-<br>
-	<form method="query" action="mostsafe.jsp">
-		<select name="TopVal2" size=1>
-			<option value="5">5</option>
-			<option value="10">10</option>
-			<option value="15">15</option>
-			<option value="20">20</option>
-			<option value="25">25</option>
-			<option value="30">30</option>
-			<option value="35">35</option>
-			<option value="40">40</option>
-			<option value="45">45</option>
-			<option value="50">50</option>
-		</select>&nbsp; <input type="submit" value="submit">
 	</form>
 <br>
 
