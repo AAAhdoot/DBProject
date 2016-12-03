@@ -27,7 +27,7 @@
 			//Get the combobox from the HelloWorld.jsp
 			String entity = request.getParameter("Checker");
 			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
-			String str = "SELECT * FROM Murders WHERE Background_Checks = '" + entity + "'" ;
+			String str = "SELECT * FROM GunControlLaws WHERE Background_Checks = '" + entity + "';" ;
 			//Run the query against the database.
 			ResultSet result = stmt.executeQuery(str);
 			
@@ -39,7 +39,7 @@
 			//make a column
 			out.print("<td>");
 			//print out column header
-			out.print("state");
+			out.print("State");
 			out.print("</td>");
 			//make a column
 

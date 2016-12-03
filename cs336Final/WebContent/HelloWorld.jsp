@@ -127,7 +127,7 @@ Show me the top X states with the lowest rates of gun violence.
 	</form>
 <br>
 
-Show me all the states that either do or do not require background checks.
+Show me all the states that either do or do not require background checks to purchase guns.
 <br>
 	<form method="query" action="backgroundcheck.jsp">
 		<select name="Checker" size=1>
@@ -153,6 +153,32 @@ Let's query the states by grade. (Note: The grades listed below are the only gra
 		</select>&nbsp;<br> <input type="submit" value="submit">
 	</form>
 <br>
+
+Want to play around with some averages? Select one value or two, and we'll calculate the average across all states.
+
+<br>
+	<form method="query" action="avgmurders.jsp">
+		<select name="StateInfo" size=1>
+		    <option value=""></option>
+			<option value="Population">Population</option>
+			<option value="Gun_Ownership">Gun Ownership</option>
+			<option value="Poverty_Level">Poverty Level</option>
+			<option value="Unemployment_Rate">Unemployment Rate</option>
+			<option value="Mental_Health_Access">Mental Health Access</option>
+		</select>&nbsp;
+		<select name="Murders" size=1>
+			<option value=""></option>
+			<option value="Total_murders">Total Murders</option>
+			<option value="Gun_murders">Gun Murders</option>
+			<option value="Handguns">Handgun Murders</option>
+			<option value="Rifles">Rifle Murders</option>
+			<option value="Shotguns">Shotgun Murders</option>
+			<option value="Firearms">Firearm Murders</option>
+		</select>&nbsp;
+		<br> <input type="submit" value="submit">
+	</form>
+<br>
+
 
 Tri-Queries
 
@@ -188,22 +214,6 @@ Tri-Queries
 		<br> <input type="submit" value="submit">
 	</form>
 <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
