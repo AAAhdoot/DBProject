@@ -13,7 +13,38 @@
 </head>
 <body>
 
+Welcome to our final project for CS336 - Databases (Fall 2016).
+We thought it'd be interesting to explore incidences of gun violence across the nation, and link in some data that isn't usually included when discussing gun violence.
+We collected a lot of data, some more interesting than others: how strict a state's gun laws are, the average unemployment rate in a state, abortion availability,
+the state's political leanings, incidences of gun violence (separated by type of gun), and more.
+
 <br>
+ <!-- Show html form to i) display something, ii) choose an action via a 
+  | radio button -->
+<form method="get" action="sources.jsp" enctype=text/plain>
+    <!-- note the show.jsp will be invoked when the choice is made -->
+	<!-- The next lines give HTML for radio buttons being displayed -->
+	<br>
+	Want to see our sources?
+  <input type="submit" value="Take me to your sources!" />
+</form>
+<br>
+
+Have fun playing around on our site! There are a bunch of powerful queries that you can run.
+
+<br>
+ <!-- Show html form to i) display something, ii) choose an action via a 
+  | radio button -->
+<form method="get" action="findings.jsp" enctype=text/plain>
+    <!-- note the show.jsp will be invoked when the choice is made -->
+	<!-- The next lines give HTML for radio buttons being displayed -->
+	<br>
+	Want to see our sources?
+  <input type="submit" value="Show me some cool findings." />
+</form>
+<br>
+
+See full data sets:
  <!-- Show html form to i) display something, ii) choose an action via a 
   | radio button -->
 <form method="get" action="show.jsp" enctype=text/plain>
@@ -31,7 +62,8 @@
 </form>
 <br>
 
-Would you like to see the total number of murders by gun that occurred in your state? Select your state from the drop-down below.
+See selected information for a particular state. Choose up to three different attributes for your state.
+
 <br>
 	<form method="query" action="totalmurdersbystate.jsp">
 		<select name="State" size=1>
@@ -261,7 +293,7 @@ Want to play around with some averages? Select one value or two, and we'll calcu
 <br>
 
 
-Tri-Queries
+Want to see three pieces of information for all states at the same time? Select the attributes below that you'd like to display.
 
 <br>
 	<form method="query" action="triquery.jsp">
@@ -296,7 +328,7 @@ Tri-Queries
 	</form>
 <br>
 
-State Comparison
+Select two states below to compare them across all attributes.
 
 <br>
 	<form method="query" action="statecompare.jsp">
