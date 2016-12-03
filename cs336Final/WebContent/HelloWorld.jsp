@@ -39,7 +39,7 @@ Have fun playing around on our site! There are a bunch of powerful queries that 
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
 	<br>
-	Want to see our sources?
+	Want to see some cool things we found out when working with this data?
   <input type="submit" value="Show me some cool findings." />
 </form>
 <br>
@@ -152,7 +152,9 @@ See selected information for a particular state. Choose up to three different at
 	</form>
 <br>
 
-Show me the top X states with the highest rates of gun violence.
+Show me the top X states with the highest values for a given attribute. 
+Select the attribute you'd like to explore further from the first column. Choose whether you'd like to sort your results in ascending or descending order, then limit the number of results you're shown using the third drop-down.
+
 <br>
 	<form method="query" action="ToporBottom.jsp">
 			<select name="Attribute" size=1>
@@ -260,7 +262,7 @@ Want to play around with some averages? Select one value or two, and we'll calcu
 <br>
 
 
-Want to see three pieces of information for all states at the same time? Select the attributes below that you'd like to display.
+Want to see three pieces of information (one from each table) for all states at the same time? Select the attributes below that you'd like to display.
 
 <br>
 	<form method="query" action="triquery.jsp">
