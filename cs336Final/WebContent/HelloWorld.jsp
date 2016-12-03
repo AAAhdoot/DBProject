@@ -297,7 +297,7 @@ Want to see three pieces of information (one from each table) for all states at 
 	</form>
 <br>
 
-Select two states below to compare them across all attributes.
+Select two states below to compare them across multiple attributes (one from each table).
 
 <br>
 	<form method="query" action="statecompare.jsp">
