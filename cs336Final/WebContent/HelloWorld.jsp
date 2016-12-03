@@ -12,11 +12,7 @@
 <title>CS336 Final Project</title>
 </head>
 <body>
-Hello World1 <!-- the usual HTML way -->
-<% out.println("Hello World2"); %> <!-- output the same thing, but using 
-                                      jsp programming -->
 
-									  
 <br>
  <!-- Show html form to i) display something, ii) choose an action via a 
   | radio button -->

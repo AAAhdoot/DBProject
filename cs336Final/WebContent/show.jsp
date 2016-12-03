@@ -43,12 +43,45 @@
 			out.print("State");
 			out.print("</td>");
 			//make a column
-			out.print("<td>");
+			
 			//depending on the radio button selection make a column header for Manufacturer if the beers table was selected and Address if the bars table was selected
-			if (entity.equals("beers"))
-				out.print("manf");
-			else
+			if (entity.equals("StateInfo")){
+				out.print("<td>");
 				out.print("Population");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Percent Gun Owners");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Income Rank");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Poverty Rate");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Unemployment Rate");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Mental Health Access Rank");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("2016 Presidential Vote");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Governor");
+				out.print("</td>");
+			}
+			
+			else
+			out.print("<td>");
+			out.print("Population");
 			out.print("</td>");
 			out.print("</tr>");
 
@@ -61,14 +94,40 @@
 				//Print out current bar or beer name:
 				out.print(result.getString("State"));
 				out.print("</td>");
-				out.print("<td>");
 				//Print out current bar/beer additional info: Manf or Address
-				if (entity.equals("beers"))
-					out.print(result.getString("manf"));
-				else
+				if (entity.equals("StateInfo")){
+					out.print("<td>");
 					out.print(result.getString("Population"));
-				out.print("</td>");
-				out.print("</tr>");
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Gun_Ownership"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Income_Level"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Poverty_Level"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Unemployment_Rate"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Mental_Health_Access"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("2016_Presidential_Election"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Governor"));
+					out.print("</td>");
+				}
 
 			}
 			out.print("</table>");
