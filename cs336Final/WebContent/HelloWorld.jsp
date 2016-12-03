@@ -212,7 +212,7 @@ Select from below whether you'd like to (1) explore by how the state voted in th
 		</select>&nbsp; 
 		<select name="Party" size=1>
 			<option value="Republican">Republican</option>
-			<option value="Democrat">Democrat</option>
+			<option value="Democratic">Democrat</option>
 		</select>&nbsp;
 		<input type="submit" value="submit"> <br>
 	</form>

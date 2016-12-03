@@ -154,15 +154,6 @@
 				out.print("<td>");
 				out.print(result.getString("Division"));
 				out.print("</td>");
-
-				
-				
-				
-				
-				
-				
-				
-				
 				
 				out.print("</tr>");
 
