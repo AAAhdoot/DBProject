@@ -122,19 +122,19 @@
 				if(empty1==0){
 				out.print("<td>");
 				//Print out current bar name:
-				out.print(result.getString(1));
+				out.print(result.getString(param1));
 				out.print("</td>");
 				}
 				if(empty2==0){
 				out.print("<td>");
 				//Print out current beer name:
-				out.print(result.getString(2));
+				out.print(result.getString(param2));
 				out.print("</td>");
 				}
 				if(empty3==0){
 				out.print("<td>");
 				//Print out current price
-				out.print(result.getString(3));
+				out.print(result.getString(param3));
 				out.print("</td>");
 				}
 				out.print("</tr>");
