@@ -115,15 +115,50 @@ Would you like to see the total number of murders by gun that occurred in your s
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
 			<option value="Background_Checks">Background Checks</option>
 		</select>&nbsp;
-		<br> <input type="submit" value="submit">
+		 <input type="submit" value="submit">
 		
 	</form>
 <br>
 
 Show me the top X states with the highest rates of gun violence.
 <br>
-	<form method="query" action="mostdanger.jsp">
-		<select name="TopVal" size=1>
+	<form method="query" action="ToporBottom.jsp">
+			<select name="StateInfo" size=1>
+		    <option value=""></option>
+			<option value="Population">Population</option>
+			<option value="Gun_Ownership">Gun Ownership</option>
+			<option value="Poverty_Level">Poverty Level</option>
+			<option value="Unemployment_Rate">Unemployment Rate</option>
+			<option value="Mental_Health_Access">Mental Health Access</option>
+		</select>&nbsp;
+		<select name="Order1" size=1>
+			<option value="ASC">Ascending</option>
+			<option value="DESC">Descending</option>
+		</select>&nbsp;<br>
+		<select name="Murders" size=1>
+			<option value=""></option>
+			<option value="Total_murders">Total Murders</option>
+			<option value="Gun_murders">Gun Murders</option>
+			<option value="Handguns">Handgun Murders</option>
+			<option value="Rifles">Rifle Murders</option>
+			<option value="Shotguns">Shotgun Murders</option>
+			<option value="Firearms">Firearm Murders</option>
+		</select>&nbsp;
+			<select name="Order2" size=1>
+			<option value="ASC">Ascending</option>
+			<option value="DESC">Descending</option>
+		</select>&nbsp;<br>
+			<select name="GunControlLaws" size=1>
+			<option value=""></option>
+			<option value="Gun_Law_Rank">Gun Law Rank</option>
+			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
+			<option value="Background_Checks">Background Checks</option>
+		</select>&nbsp;
+			<select name="Order3" size=1>
+			<option value="ASC">Ascending</option>
+			<option value="DESC">Descending</option>
+		</select>&nbsp;<br>
+			<select name="TBVal" size=1>
 			<option value="5">5</option>
 			<option value="10">10</option>
 			<option value="15">15</option>
@@ -134,7 +169,7 @@ Show me the top X states with the highest rates of gun violence.
 			<option value="40">40</option>
 			<option value="45">45</option>
 			<option value="50">50</option>
-		</select>&nbsp;<br> <input type="submit" value="submit">
+		</select>&nbsp;<input type="submit" value="submit">
 	</form>
 <br>
 
@@ -152,7 +187,7 @@ Show me the top X states with the lowest rates of gun violence.
 			<option value="40">40</option>
 			<option value="45">45</option>
 			<option value="50">50</option>
-		</select>&nbsp;<br> <input type="submit" value="submit">
+		</select>&nbsp; <input type="submit" value="submit">
 	</form>
 <br>
 
@@ -162,7 +197,7 @@ Show me all the states that either do or do not require background checks to pur
 		<select name="Checker" size=1>
 			<option value="no">Do not</option>
 			<option value="yes">Do</option>
-		</select>&nbsp;<br> <input type="submit" value="submit">
+		</select>&nbsp; <input type="submit" value="submit">
 	</form>
 <br>
 
@@ -179,7 +214,7 @@ Let's query the states by grade. (Note: The grades listed below are the only gra
 			<option value="D">D</option>
 			<option value="D-">D-</option>
 			<option value="F">F</option>
-		</select>&nbsp;<br> <input type="submit" value="submit">
+		</select>&nbsp;<input type="submit" value="submit">
 	</form>
 <br>
 
@@ -204,7 +239,7 @@ Want to play around with some averages? Select one value or two, and we'll calcu
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
 		</select>&nbsp;
-		<br> <input type="submit" value="submit">
+		<input type="submit" value="submit">
 	</form>
 <br>
 
@@ -240,7 +275,7 @@ Tri-Queries
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
 			<option value="Background_Checks">Background Checks</option>
 		</select>&nbsp;
-		<br> <input type="submit" value="submit">
+		<input type="submit" value="submit">
 	</form>
 <br>
 
@@ -381,7 +416,7 @@ State Comparison
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
 			<option value="Background_Checks">Background Checks</option>
 		</select>&nbsp;
-		<br> <input type="submit" value="submit">
+	 <input type="submit" value="submit">
 	</form>
 <br>
 
