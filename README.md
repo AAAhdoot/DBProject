@@ -11,7 +11,7 @@ under #1
 - (DONE) clean up how we view state info
 - (DONE) clean up how we view murders
 - (DONE) add option for gun control laws & display
-- add rest of columns for results in query by grade
+- (DONE) add rest of columns for results in query by grade
 - (DONE) states that don't require background checks ( on this now - ASHNI)
 - (DONE) states that do require background checks (on this now - ASHNI)
 - look into charts & things
@@ -21,18 +21,19 @@ under #1
 different types of queries:
 ----------------------------
 - state by state comparison
-- political affiliation v background checks
-- murders/gun_death_rank_rate v mental health access by state (queries written)
-- poverty level v murders
-- poverty level v political affiliation
-- unemployment v murders
-- political affiliation v murders
-- show political affiliation against gun law scorecard levels
-- political affiliation v state
-- percent gun owners v murders
-- percent gun owners v political affiliation
-- percent gun owners v poverty level and income
-- unemployment v percent gun owners v murders
+- three element queries: X by Y by Z for all states, where X is values from StateInfo, Y is values from Murders, and Z is values from GunControlLaws
+- (see above) political affiliation v background checks
+- (see above) murders/gun_death_rank_rate v mental health access by state (queries written)
+- (see above) poverty level v murders
+- (see above) poverty level v political affiliation
+- (see above) unemployment v murders
+- (see above) political affiliation v murders
+- (see above) show political affiliation against grade
+- (see above) political affiliation v state
+- (see above) percent gun owners v murders
+- (see above) percent gun owners v political affiliation
+- (see above) percent gun owners v poverty level and income
+- (hmmm.. ) unemployment v percent gun owners v murders
 - handgun murder per state (ashni)
 - shotgun murder per state
 - etc.. lol

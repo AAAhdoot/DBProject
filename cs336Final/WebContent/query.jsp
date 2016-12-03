@@ -39,15 +39,15 @@
 			//make a column
 			out.print("<td>");
 			//print out column header
-			out.print("state");
+			out.print("State");
 			out.print("</td>");
 			//make a column
 			out.print("<td>");
-			out.print("gun law rank");
+			out.print("Gun Law Rank");
 			out.print("</td>");
 			//make a column
 			out.print("<td>");
-			out.print("grade");
+			out.print("Grade");
 			out.print("</td>");
 			out.print("</tr>");
 
