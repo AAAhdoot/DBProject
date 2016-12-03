@@ -25,6 +25,7 @@ different types of queries:
 - (DONE) most dangerous states limit, asc, desc, etc. 
 - (DONE) aggregate
 - sum of deaths per region
-- average rate of unemployment by region
+- average rate of X by region
+- show abortion, mental health access data based on state governor political party
 
 note to us: remember quotes with F but not with numbers
