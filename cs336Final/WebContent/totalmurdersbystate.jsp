@@ -39,12 +39,28 @@
 			//make a column
 			out.print("<td>");
 			//print out column header
-			out.print("state");
+			out.print("State");
 			out.print("</td>");
 			//make a column
 			out.print("<td>");
-			out.print("total murders by gun");
-			out.print("</td>");
+				out.print("Murders by Gun");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Murders by Handgun");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Murders by Rifle");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Murders by Shotgun");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Murders by Firearm");
+				out.print("</td>");
 			//make a column
 			
 			out.print("</tr>");
@@ -58,11 +74,26 @@
 				//Print out current bar name:
 				out.print(result.getString("State"));
 				out.print("</td>");
-				out.print("<td>");
 				//Print out current beer name:
-				out.print(result.getString("Gun_murders"));
-				out.print("</td>");
-				
+				out.print("<td>");
+					out.print(result.getString("Gun_murders"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Handguns"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Rifles"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Shotguns"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Firearms"));
+					out.print("</td>");
 				out.print("</tr>");
 
 			}
