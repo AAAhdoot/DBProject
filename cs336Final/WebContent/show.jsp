@@ -79,10 +79,51 @@
 				out.print("</td>");
 			}
 			
-			else
-			out.print("<td>");
-			out.print("Population");
-			out.print("</td>");
+			if (entity.equals("Murders")){
+				out.print("<td>");
+				out.print("Total Murders");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Murders by Gun");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Murders by Handgun");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Murders by Rifle");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Murders by Shotgun");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Murders by Firearm");
+				out.print("</td>");
+			}
+			
+			if (entity.equals("GunControlLaws")){
+				out.print("<td>");
+				out.print("Gun Law Rank");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Grade");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Gun Death Rate Rank");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Requires Background Checks");
+				out.print("</td>");
+	
+			}
+			
 			out.print("</tr>");
 
 			//parse out the results
@@ -127,6 +168,51 @@
 					out.print("<td>");
 					out.print(result.getString("Governor"));
 					out.print("</td>");
+				}
+				
+				if (entity.equals("Murders")){
+					out.print("<td>");
+					out.print(result.getString("Total_murders"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Gun_murders"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Handguns"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Rifles"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Shotguns"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Firearms"));
+					out.print("</td>");
+				}
+				
+				if (entity.equals("GunControlLaws")){
+					out.print("<td>");
+					out.print(result.getString("Gun_Law_Rank"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Grade"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Gun_Death_Rate_Rank"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Background_Checks"));
+					out.print("</td>");
+					
 				}
 
 			}
