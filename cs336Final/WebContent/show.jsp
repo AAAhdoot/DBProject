@@ -77,6 +77,23 @@
 				out.print("<td>");
 				out.print("Governor");
 				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Concealed Carry Limit");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("% Women with No Abortion Provider in County");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Region");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Division");
+				out.print("</td>");
+				
 			}
 			
 			if (entity.equals("Murders")){
@@ -167,6 +184,22 @@
 					
 					out.print("<td>");
 					out.print(result.getString("Governor"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("CCW_Type"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Percent_No_Abortion_Provider"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Region"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Division"));
 					out.print("</td>");
 				}
 				

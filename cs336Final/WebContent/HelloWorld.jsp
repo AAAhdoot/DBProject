@@ -166,6 +166,23 @@ Show me all the states that either do or do not require background checks to pur
 	</form>
 <br>
 
+Want to see state-based (demographic) data based on a state's political affiliation? Like abortion access, mental health access, poverty level, etc.
+Select from below whether you'd like to (1) explore by how the state voted in the 2016 Presidential Election or (2) the state's governor, and what political party you'd like to search.
+
+<br>
+	<form method="query" action="politicalexplore.jsp">
+		<select name="PoliticalChoice" size=1>
+			<option value="2016_Presidential_Election">2016 Presidential Election</option>
+			<option value="Governor">Governor</option>
+		</select>&nbsp; 
+		<select name="Party" size=1>
+			<option value="Republican">Republican</option>
+			<option value="Democrat">Democrat</option>
+		</select>&nbsp;
+		<input type="submit" value="submit"> <br>
+	</form>
+<br>
+
 Let's query the states by grade. (Note: The grades listed below are the only grades that states have received in the past year.)
 <br>
 	<form method="query" action="query.jsp">
