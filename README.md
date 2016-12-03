@@ -23,11 +23,8 @@ different types of queries:
 - state by state comparison
 - (DONE) three element queries: X by Y by Z for all states, where X is values from StateInfo, Y is values from Murders, and Z is values from GunControlLaws
 - (DONE) most dangerous states limit, asc, desc, etc. 
-- (DONE) safest states
-- aggregate
+- (DONE) aggregate
 - sum of deaths per region
 - average rate of unemployment by region
 
 note to us: remember quotes with F but not with numbers
-
-
