@@ -60,11 +60,17 @@
 			}
 			
 			
-			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
+			if(param1.equals("") && param2.equals("") && param3.equals("")){
+				out.print("You have selected no values.");
+				return;
+			}
+			
 			String str = "SELECT StateInfo.state," + entity1 + entity2 + entity3 + " FROM GunControlLaws, StateInfo, Murders  WHERE StateInfo.State= Murders.State and Murders.State = GunControlLaws.State;";
+			
+			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
+			
 			//Run the query against the database.
 			
-		
 			
 			ResultSet result = stmt.executeQuery(str);
 
