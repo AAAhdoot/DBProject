@@ -24,12 +24,58 @@
 		Connection con = DriverManager.getConnection(url, "arielashni", "lelohex69");
 			//Create a SQL statement
 			Statement stmt = con.createStatement();
+			
 			//Get the combobox from the HelloWorld.jsp
-			String entity = request.getParameter("State");
+			String entity1 = "";
+			String entity2 = "";
+			String entity3 = "";
+			
+			int empty1 = 1;
+			int empty2 = 1;
+			int empty3 = 1;
+			
+			String param1 = request.getParameter("StateInfo");
+			String param2 = request.getParameter("Murders");
+			String param3 = request.getParameter("GunControlLaws");
+			String paramState = request.getParameter("State");
+
+			if(!param1.equals("")){
+				entity1+= "StateInfo." + param1;
+				if(!param2.equals("") || (param2.equals("") && !param3.equals(""))){
+					entity1+=",";
+				}
+				empty1 = 0;
+			}
+			
+			if(!param2.equals("")){
+				entity2+= "Murders." + param2;
+				if(!param3.equals("")){
+					entity2+=",";
+				}
+				empty2 = 0;
+			}
+			
+			if(!param3.equals("")){
+				entity3+= "GunControlLaws." + param3;
+				empty3 = 0;
+			}
+			
+			
+			if(param1.equals("") && param2.equals("") && param3.equals("")){
+				out.print("You have selected no values.");
+				return;
+			}
+			
+			String str = "SELECT " + entity1 + entity2 + entity3 + " FROM GunControlLaws, StateInfo, Murders  WHERE StateInfo.State = \""  + paramState + "\" AND Murders.State = \""  + paramState + "\" AND GunControlLaws.State = \""  + paramState + "\";";
+			//out.print(str);
 			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
-			String str = "SELECT * FROM Murders WHERE State = '" + entity + "'" ;
+			
 			//Run the query against the database.
+			
+			
 			ResultSet result = stmt.executeQuery(str);
+
+			
 			
 			//Make an HTML table to show the results in:
 			out.print("<table>");
@@ -41,28 +87,25 @@
 			//print out column header
 			out.print("State");
 			out.print("</td>");
-			//make a column
-			out.print("<td>");
-				out.print("Murders by Gun");
-				out.print("</td>");
-				
-				out.print("<td>");
-				out.print("Murders by Handgun");
-				out.print("</td>");
-				
-				out.print("<td>");
-				out.print("Murders by Rifle");
-				out.print("</td>");
-				
-				out.print("<td>");
-				out.print("Murders by Shotgun");
-				out.print("</td>");
-				
-				out.print("<td>");
-				out.print("Murders by Firearm");
-				out.print("</td>");
-			//make a column
 			
+			if(empty1==0){
+			out.print("<td>");
+			//print out column header
+			out.print(param1);
+			out.print("</td>");
+			//make a column
+			}
+			if(empty2==0){
+			out.print("<td>");
+			out.print(param2);
+			out.print("</td>");
+			//make a column
+			}
+			if(empty3==0){
+			out.print("<td>");
+			out.print(param3);
+			out.print("</td>");
+			}
 			out.print("</tr>");
 
 			//parse out the results
@@ -70,34 +113,35 @@
 				//make a row
 				out.print("<tr>");
 				//make a column
+				
 				out.print("<td>");
 				//Print out current bar name:
-				out.print(result.getString("State"));
+				out.print(paramState); //should be printing out state
 				out.print("</td>");
-				//Print out current beer name:
+				
+				if(empty1==0){
 				out.print("<td>");
-					out.print(result.getString("Gun_murders"));
-					out.print("</td>");
-					
-					out.print("<td>");
-					out.print(result.getString("Handguns"));
-					out.print("</td>");
-					
-					out.print("<td>");
-					out.print(result.getString("Rifles"));
-					out.print("</td>");
-					
-					out.print("<td>");
-					out.print(result.getString("Shotguns"));
-					out.print("</td>");
-					
-					out.print("<td>");
-					out.print(result.getString("Firearms"));
-					out.print("</td>");
+				//Print out current bar name:
+				out.print(result.getString(1));
+				out.print("</td>");
+				}
+				if(empty2==0){
+				out.print("<td>");
+				//Print out current beer name:
+				out.print(result.getString(2));
+				out.print("</td>");
+				}
+				if(empty3==0){
+				out.print("<td>");
+				//Print out current price
+				out.print(result.getString(3));
+				out.print("</td>");
+				}
 				out.print("</tr>");
 
 			}
 			out.print("</table>");
+
 
 			//close the connection.
 			con.close();
