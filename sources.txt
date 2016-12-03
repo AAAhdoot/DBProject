@@ -1,3 +1,11 @@
+https://ucr.fbi.gov/crime-in-the-u.s/2015/crime-in-the-u.s.-2015/tables/table-20 (for Murders table)
+
+https://en.wikipedia.org/wiki/List_of_U.S._states_by_income (for StateInfo table)
+https://en.wikipedia.org/wiki/List_of_U.S._states_by_unemployment_rate (for StateInfo table)
+https://en.wikipedia.org/wiki/List_of_U.S._states_by_poverty_rate (for StateInfo table)
+
+http://gunlawscorecard.org (for GunControlLaws table)
+
 
 
 
