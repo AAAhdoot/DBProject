@@ -1,174 +1,177 @@
 Here are some cool findings from our data!
 
-SELECT StateInfo.State, GunControlLaws.Background_Checks,StateInfo.CCW_Type, GunControlLaws.Gun_Death_Rate_Rank
-FROM GunControlLaws,StateInfo
-WHERE Background_Checks = "no" AND StateInfo.State = GunControlLaws.State AND 2016_Presidential_Election = "Republican"
+<br>
+<br>
+
+SELECT StateInfo.State, GunControlLaws.Background_Checks,StateInfo.CCW_Type, GunControlLaws.Gun_Death_Rate_Rank <br>
+FROM GunControlLaws,StateInfo <br>
+WHERE Background_Checks = "no" AND StateInfo.State = GunControlLaws.State AND 2016_Presidential_Election = "Republican" <br>
 
 <br>
 
-'Alabama','no','Limited Discretion','4'
-'Alaska','no','None','1'
-'Arizona','no','None','15'
-'Arkansas','no','Limited Discretion','6'
-'Florida','no','No Discretion','23'
-'Georgia','no','Limited Discretion','20'
-'Idaho','no','None','14'
-'Indiana','no','Limited Discretion','18'
-'Kansas','no','None','26'
-'Kentucky','no','No Discretion','17'
-'Louisiana','no','No Discretion','2'
-'Mississippi','no','No Discretion','3'
-'Missouri','no','Limited Discretion','12'
-'Montana','no','Limited Discretion','5'
-'North Dakota','no','Limited Discretion','24'
-'Ohio','no','No Discretion','29'
-'Oklahoma','no','No Discretion','8'
-'South Carolina','no','No Discretion','11'
-'South Dakota','no','Limited Discretion','34'
-'Tennessee','no','No Discretion','10'
-'Texas','no','No Discretion','31'
-'Utah','no','Limited Discretion','19'
-'West Virginia','no','None','13'
-'Wisconsin','no','No Discretion','35'
-'Wyoming','no','None','7'
+'Alabama','no','Limited Discretion','4' <br>
+'Alaska','no','None','1' <br>
+'Arizona','no','None','15'<br>
+'Arkansas','no','Limited Discretion','6'<br>
+'Florida','no','No Discretion','23'<br>
+'Georgia','no','Limited Discretion','20'<br>
+'Idaho','no','None','14'<br>
+'Indiana','no','Limited Discretion','18'<br>
+'Kansas','no','None','26'<br>
+'Kentucky','no','No Discretion','17'<br>
+'Louisiana','no','No Discretion','2'<br>
+'Mississippi','no','No Discretion','3'<br>
+'Missouri','no','Limited Discretion','12'<br>
+'Montana','no','Limited Discretion','5'<br>
+'North Dakota','no','Limited Discretion','24'<br>
+'Ohio','no','No Discretion','29'<br>
+'Oklahoma','no','No Discretion','8'<br>
+'South Carolina','no','No Discretion','11'<br>
+'South Dakota','no','Limited Discretion','34'<br>
+'Tennessee','no','No Discretion','10'<br>
+'Texas','no','No Discretion','31'<br>
+'Utah','no','Limited Discretion','19'<br>
+'West Virginia','no','None','13'<br>
+'Wisconsin','no','No Discretion','35'<br>
+'Wyoming','no','None','7'<br>
 
 <br>
 
 Result: The states that do not require background checks to purchase a gun, and who voted Republican in the 2016 Presidential Election, tend to be more dangerous - that is, their ranks for gun death rates are high (in the top half).
+<br>
+<br>
+
+SELECT StateInfo.State, GunControlLaws.Background_Checks,StateInfo.CCW_Type, GunControlLaws.Gun_Death_Rate_Rank<br>
+FROM GunControlLaws,StateInfo<br>
+WHERE Background_Checks = "yes" AND StateInfo.State = GunControlLaws.State<br>
 
 <br>
 
-SELECT StateInfo.State, GunControlLaws.Background_Checks,StateInfo.CCW_Type, GunControlLaws.Gun_Death_Rate_Rank
-FROM GunControlLaws,StateInfo
-WHERE Background_Checks = "yes" AND StateInfo.State = GunControlLaws.State
+'California','yes','May Issue','42' <br>
+'Colorado','yes','Limited Discretion','25' <br>
+'Connecticut','yes','May Issue','47'<br>
+'Delaware','yes','May Issue','32'<br>
+'Hawaii','yes','May Issue','50'<br>
+'Illinois','yes','Limited Discretion','40'<br>
+'Iowa','yes','Limited Discretion','41'<br>
+'Maryland','yes','May Issue','36'<br>
+'Massachusetts','yes','May Issue','49'<br>
+'Michigan','yes','No Discretion','22'<br>
+'Nebraska','yes','No Discretion','38'<br>
+'New Jersey','yes','May Issue','45'<br>
+'New York','yes','May Issue','48'<br>
+'North Carolina','yes','No Discretion','21'<br>
+'Oregon','yes','Limited Discretion','28'<br>
+'Pennsylvania','yes','Limited Discretion','27'<br>
+'Rhode Island','yes','May Issue','46'<br>
+'Washington','yes','No Discretion','39'<br>
 
 <br>
 
-'California','yes','May Issue','42'
-'Colorado','yes','Limited Discretion','25'
-'Connecticut','yes','May Issue','47'
-'Delaware','yes','May Issue','32'
-'Hawaii','yes','May Issue','50'
-'Illinois','yes','Limited Discretion','40'
-'Iowa','yes','Limited Discretion','41'
-'Maryland','yes','May Issue','36'
-'Massachusetts','yes','May Issue','49'
-'Michigan','yes','No Discretion','22'
-'Nebraska','yes','No Discretion','38'
-'New Jersey','yes','May Issue','45'
-'New York','yes','May Issue','48'
-'North Carolina','yes','No Discretion','21'
-'Oregon','yes','Limited Discretion','28'
-'Pennsylvania','yes','Limited Discretion','27'
-'Rhode Island','yes','May Issue','46'
-'Washington','yes','No Discretion','39'
+Result: The states that do require background checks to purchase a gun tend to be 'safer' - that is, their gun death rate ranks are low.<br>
 
 <br>
 
-Result: The states that do require background checks to purchase a gun tend to be 'safer' - that is, their gun death rate ranks are low.
+SELECT StateInfo.State, StateInfo.Percent_No_Abortion_Provider, StateInfo.2016_Presidential_Election<br>
+FROM StateInfo<br>
+WHERE Percent_No_Abortion_Provider > 60<br>
 
 <br>
 
-SELECT StateInfo.State, StateInfo.Percent_No_Abortion_Provider, StateInfo.2016_Presidential_Election
-FROM StateInfo
-WHERE Percent_No_Abortion_Provider > 60
+'Arkansas','78','Republican'<br>
+'Idaho','69','Republican'<br>
+'Indiana','61','Republican'<br>
+'Kansas','74','Republican'<br>
+'Kentucky','74','Republican'<br>
+'Louisiana','63','Republican'<br>
+'Mississippi','91','Republican'<br>
+'Missouri','74','Republican'<br>
+'North Dakota','73','Republican'<br>
+'South Dakota','77','Republican'<br>
+'West Virginia','82','Republican'<br>
+'Wyoming','96','Republican'<br>
 
 <br>
 
-'Arkansas','78','Republican'
-'Idaho','69','Republican'
-'Indiana','61','Republican'
-'Kansas','74','Republican'
-'Kentucky','74','Republican'
-'Louisiana','63','Republican'
-'Mississippi','91','Republican'
-'Missouri','74','Republican'
-'North Dakota','73','Republican'
-'South Dakota','77','Republican'
-'West Virginia','82','Republican'
-'Wyoming','96','Republican'
+Result: The states in which there is increased difficulty of having an abortion voted all Republican in the 2016 Presidential Election.<br>
 
 <br>
 
-Result: The states in which there is increased difficulty of having an abortion voted all Republican in the 2016 Presidential Election.
+Select StateInfo.State, Gun_Ownership, 2016_Presidential_Election<br>
+From StateInfo <br>
+Where Gun_Ownership > 30<br>
+ORDER BY Gun_Ownership DESC<br>
+LIMIT 15<br>
 
 <br>
 
-Select StateInfo.State, Gun_Ownership, 2016_Presidential_Election
-From StateInfo
-Where Gun_Ownership > 30
-ORDER BY Gun_Ownership DESC
-LIMIT 15
+'Alaska','61.7','Republican','Independent'<br>
+'Arkansas','57.9','Republican','Republican'<br>
+'Illinois','56.9','Democratic','Republican'<br>
+'Wisconsin','54.2','Republican','Republican'<br>
+'Nebraska','52.3','Republican','Republican'<br>
+'New York','49.9','Democratic','Democratic'<br>
+'Alabama','48.9','Republican','Republican'<br>
+'Ohio','47.9','Republican','Republican'<br>
+'Idaho','45.1','Republican','Republican'<br>
+'Maine','44.5','Democratic','Republican'<br>
+'South Dakota','44.4','Republican','Republican'<br>
+'Missouri','42.8','Republican','Republican'<br>
+'Louisiana','42.4','Republican','Democratic'<br>
+'Texas','39.4','Republican','Republican'<br>
+'New Hampshire','37.5','Democratic','Republican'<br>
 
 <br>
 
-'Alaska','61.7','Republican','Independent'
-'Arkansas','57.9','Republican','Republican'
-'Illinois','56.9','Democratic','Republican'
-'Wisconsin','54.2','Republican','Republican'
-'Nebraska','52.3','Republican','Republican'
-'New York','49.9','Democratic','Democratic'
-'Alabama','48.9','Republican','Republican'
-'Ohio','47.9','Republican','Republican'
-'Idaho','45.1','Republican','Republican'
-'Maine','44.5','Democratic','Republican'
-'South Dakota','44.4','Republican','Republican'
-'Missouri','42.8','Republican','Republican'
-'Louisiana','42.4','Republican','Democratic'
-'Texas','39.4','Republican','Republican'
-'New Hampshire','37.5','Democratic','Republican'
+Result: The states that have higher rates of gun ownership are overwhelmingly Republican. Of the 15 states that have the highest rates of gun ownership, more than 10 voted Republican in the 2016 Presidential Election, and more than 10 have Republican governors. <br>
+
+(Interestingly, the states with the lowest rates of gun ownership are overwhelmingly Democratic.) <br>
 
 <br>
 
-Result: The states that have higher rates of gun ownership are overwhelmingly Republican. Of the 15 states that have the highest rates of gun ownership, more than 10 voted Republican in the 2016 Presidential Election, and more than 10 have Republican governors.
-
-(Interestingly, the states with the lowest rates of gun ownership are overwhelmingly Democratic.)
-
-<br>
-
-Select StateInfo.State, Income_Level, 2016_Presidential_Election
-From StateInfo
-ORDER BY Income_Level ASC
-LIMIT 10
+Select StateInfo.State, Income_Level, 2016_Presidential_Election <br>
+From StateInfo <br>
+ORDER BY Income_Level ASC <br>
+LIMIT 10 <br>
 
 <br>
 
-'Maryland','1','Democratic'
-'New Jersey','2','Democratic'
-'California','3','Democratic'
-'Connecticut','4','Democratic'
-'District of Columbia','5','Democratic'
-'Massachusetts','6','Democratic'
-'New Hampshire','7','Democratic'
-'Virginia','8','Democratic'
-'Hawaii','9','Democratic'
-'Minnesota','10','Democratic'
+'Maryland','1','Democratic' <br>
+'New Jersey','2','Democratic' <br>
+'California','3','Democratic'<br>
+'Connecticut','4','Democratic'<br>
+'District of Columbia','5','Democratic'<br>
+'Massachusetts','6','Democratic'<br>
+'New Hampshire','7','Democratic'<br>
+'Virginia','8','Democratic'<br>
+'Hawaii','9','Democratic'<br>
+'Minnesota','10','Democratic'<br>
 
 <br>
 
-Result: The 10 states with the highest incomes all voted Democratic in the most recent election. (Conversely, of the 10 states with the lowest incomes, 9 voted Republican in the most recent election.)
+Result: The 10 states with the highest incomes all voted Democratic in the most recent election. (Conversely, of the 10 states with the lowest incomes, 9 voted Republican in the most recent election.)<br>
 
 <br>
 
-Select StateInfo.State, StateInfo.Income_Level, GunControlLaws.Grade
-FROM StateInfo, GunControlLaws
-WHERE StateInfo.State = GunControlLaws.State
-ORDER BY Income_Level DESC
-LIMIT 10
+Select StateInfo.State, StateInfo.Income_Level, GunControlLaws.Grade<br>
+FROM StateInfo, GunControlLaws<br>
+WHERE StateInfo.State = GunControlLaws.State<br>
+ORDER BY Income_Level DESC<br>
+LIMIT 10<br>
 
 <br>
 
-'Mississippi','51','F'
-'West Virginia','50','D-'
-'Arkansas','49','F'
-'Kentucky','48','F'
-'Alabama','47','F'
-'Tennessee','46','F'
-'Louisiana','45','F'
-'New Mexico','44','F'
-'South Carolina','43','F'
-'Oklahoma','42','F'
+'Mississippi','51','F'<br>
+'West Virginia','50','D-'<br>
+'Arkansas','49','F'<br>
+'Kentucky','48','F'<br>
+'Alabama','47','F'<br>
+'Tennessee','46','F'<br>
+'Louisiana','45','F'<br>
+'New Mexico','44','F'<br>
+'South Carolina','43','F'<br>
+'Oklahoma','42','F'<br>
 
 <br>
 
-Result: The 10 states with the lowest average income all have failing grades for their gun laws.
+Result: The 10 states with the lowest average income all have failing grades for their gun laws.<br>
