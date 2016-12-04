@@ -192,6 +192,34 @@ Select the attribute you'd like to explore further from the first column. Choose
 	</form>
 <br>
 
+
+Shows the state with the largest or smallest value of a given attribute as well as the value itself.
+<br>
+	<form method="query" action="minmax.jsp">
+			<select name="Attribute" size=1>
+			<option value="Population">Population</option>
+			<option value="Gun_Ownership">Gun Ownership</option>
+			<option value="Poverty_Level">Poverty Level</option>
+			<option value="Unemployment_Rate">Unemployment Rate</option>
+			<option value="Mental_Health_Access">Mental Health Access</option>
+			<option value="Percent_No_Abortion_Provider">Difficulty of Abortion Access</option>
+			<option value="Total_murders">Total Murders</option>
+			<option value="Gun_murders">Gun Murders</option>
+			<option value="Handguns">Handgun Murders</option>
+			<option value="Rifles">Rifle Murders</option>
+			<option value="Shotguns">Shotgun Murders</option>
+			<option value="Firearms">Firearm Murders</option>
+			<option value="Gun_Law_Rank">Gun Law Rank</option>
+			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
+		</select>&nbsp;
+		<select name="Choice" size=1>
+			<option value="MIN">Smallest</option>
+			<option value="MAX">Largest</option>
+		</select>&nbsp;<br>
+<input type="submit" value="submit">
+	</form>
+<br>
+
 Show me all the states that either do or do not require background checks to purchase guns.
 <br>
 	<form method="query" action="backgroundcheck.jsp">
