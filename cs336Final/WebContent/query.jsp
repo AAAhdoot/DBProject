@@ -78,7 +78,9 @@
 
 		} catch (Exception e) {
 		}
+		
 	%>
+	<img src="stategradebargraph.png" />
 
 </body>
 </html>
