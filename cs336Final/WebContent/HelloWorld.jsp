@@ -373,6 +373,26 @@ the average value for each attribute across all states.
 	</form>
 <br>
 
+<b>Want to view all the average demographic, gun violence, or gun control data for a given group of states? </b> Select your category below and the type of data you'd like to view.
+
+<br>
+
+Select a category.
+<form method="query" action="GeoAvg.jsp">
+		<select name="geo" size=1>
+			<option value="Region">Region</option>
+			<option value=Division>Division</option>
+		</select>&nbsp;<p>
+		Select a category of information. <br>
+		<select name="table" size=1>
+			<option value="StateInfo">Demographic Data</option>
+			<option value="Murders">Gun Violence Data</option>
+			<option value="GunControlLaws">Gun Control Data</option>
+		</select>&nbsp;<input type="submit" value="submit">
+	</form>
+<br>
+
+
 <b>
 Want to see three pieces of information (one from each table) for all states at the same time? </b> Select the attributes below that you'd like to display.
 <br>
