@@ -18,6 +18,12 @@ We thought it'd be interesting to explore incidences of gun violence across the 
 We collected a lot of data, some more interesting than others: how strict a state's gun laws are, the average unemployment rate in a state, abortion availability,
 the state's political leanings, incidences of gun violence (separated by type of gun), and more.
 <br>
+<br>
+Note: Data surrounding murders by different types of guns was not available for Florida. Our data comes from the FBI's Crime in the United States Report, which relies on data 
+that is submitted through the Uniform Crime Reporting (UCR) Program. In multiple years (including the most recent one), the supplemental homicide data submitted by the Florida state UCR Program
+did not meet UCR guidelines and was not included in the FBI table (Table 20 of the Crime in the US index).
+ 
+<br>
  <!-- Show html form to i) display something, ii) choose an action via a 
   | radio button -->
 <form method="get" action="sources.jsp" enctype=text/plain>
