@@ -13,11 +13,10 @@
 </head>
 <body>
 
-Welcome to our final project for CS336 - Databases (Fall 2016).
+<b>Welcome to our final project for CS336 - Databases (Fall 2016).</b>
 We thought it'd be interesting to explore incidences of gun violence across the nation, and link in some data that isn't usually included when discussing gun violence.
 We collected a lot of data, some more interesting than others: how strict a state's gun laws are, the average unemployment rate in a state, abortion availability,
 the state's political leanings, incidences of gun violence (separated by type of gun), and more.
-
 <br>
  <!-- Show html form to i) display something, ii) choose an action via a 
   | radio button -->
@@ -25,7 +24,7 @@ the state's political leanings, incidences of gun violence (separated by type of
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
 	<br>
-	Want to see our sources?
+	<b>Want to see our sources?</b>
   <input type="submit" value="Take me to your sources!" />
 </form>
 <br>
@@ -39,12 +38,12 @@ Have fun playing around on our site! There are a bunch of powerful queries that 
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
 	<br>
-	Want to see some cool things we found out when working with this data?
+	<b>Want to see some cool things we found out when working with this data?</b>
   <input type="submit" value="Show me some cool findings." />
 </form>
 <br>
 
-See full data sets:
+<b>See our full data sets:</b>
  <!-- Show html form to i) display something, ii) choose an action via a 
   | radio button -->
 <form method="get" action="show.jsp" enctype=text/plain>
@@ -61,9 +60,11 @@ See full data sets:
   <input type="submit" value="submit" />
 </form>
 <br>
+<b>Want to view all the demographic, gun violence, or gun control data for a given state? </b> Select your state below and the type of data you'd like to view.
 
-Now let's look at all of the demographic data, all of the gun violence data, or all of the gun control data for one particular state. <br>
-Choose a state
+<br>
+
+Select a state.
 <form method="query" action="onestatefull.jsp">
 		<select name="state" size=1>
 			<option value="Alabama">Alabama</option>
@@ -118,7 +119,7 @@ Choose a state
 			<option value="Wisconsin">Wisconsin</option>
 			<option value="Wyoming">Wyoming</option>
 		</select>&nbsp;<p>
-		Choose which type of information you would like to see. <br>
+		Select a category of information. <br>
 		<select name="table" size=1>
 			<option value="StateInfo">Demographic Data</option>
 			<option value="Murders">Gun Violence Data</option>
@@ -127,9 +128,9 @@ Choose a state
 	</form>
 <br>
 
+<b> See selected information for a particular state. </b> Choose up to three different attributes (one from Demographic Data, one from Gun Violence, and one from Gun Control Laws) for your state.<br>
 
-See selected information for a particular state. Choose up to three different attributes (from Demographic Data, Gun Violence, and Gun Control Laws) for your state.<br>
- Choose a state 
+Select a state. 
 <form method="query" action="onestate.jsp">
 		<select name="State" size=1>
 			<option value="Alabama">Alabama</option>
@@ -184,7 +185,7 @@ See selected information for a particular state. Choose up to three different at
 			<option value="Wisconsin">Wisconsin</option>
 			<option value="Wyoming">Wyoming</option>
 		</select>&nbsp; <p>
-		Would you like to add an attribute related to demographic data? <br>
+		Would you like to add an attribute related to demographic data? If not, leave this drop-down blank.<br>
 		<select name="StateInfo" size=1>
 		    <option value=""></option>
 			<option value="Population">Population</option>
@@ -196,7 +197,7 @@ See selected information for a particular state. Choose up to three different at
 			<option value="2016_Presidential_Election">2016 Presidential Election</option>
 			<option value="Governor">Governor</option>
 		</select>&nbsp; <p>
-		Would you like to add an attribute related to gun violence? <br>
+		Would you like to add an attribute related to gun violence? If not, leave this drop-down blank.<br>
 		<select name="Murders" size=1>
 			<option value=""></option>
 			<option value="Total_murders">Total Murders</option>
@@ -206,7 +207,7 @@ See selected information for a particular state. Choose up to three different at
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
 		</select>&nbsp;<p>
-		Would you like to add an attribute related to gun control laws? <br>
+		Would you like to add an attribute related to gun control laws? If not, leave this drop-down blank.<br>
 		<select name="GunControlLaws" size=1>
 			<option value=""></option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
@@ -218,12 +219,13 @@ See selected information for a particular state. Choose up to three different at
 		
 	</form>
 <br>
-
-Show me the top X states with the highest values for a given attribute. 
+<b>
+Show me the top X states with the highest values for a given attribute. </b>
 Select the attribute you'd like to explore further from the first column. Choose whether you'd like to sort your results in ascending or descending order, then limit the number of results you're shown using the third drop-down.
-
 <br>
+
 	<form method="query" action="ToporBottom.jsp">
+	Select an attribute.<br>
 			<select name="Attribute" size=1>
 			<option value="Population">Population</option>
 			<option value="Gun_Ownership">Gun Ownership</option>
@@ -239,11 +241,13 @@ Select the attribute you'd like to explore further from the first column. Choose
 			<option value="Firearms">Firearm Murders</option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
-		</select>&nbsp;
+		</select>&nbsp;<p>
+		Choose whether you'd like your results sorted in ascending or descending order. <br>
 		<select name="Order" size=1>
 			<option value="ASC">Ascending</option>
 			<option value="DESC">Descending</option>
-		</select>&nbsp;<br>
+		</select>&nbsp;<p>
+		Choose how many results you'd like to display. <br>
 			<select name="TBVal" size=1>
 			<option value="5">5</option>
 			<option value="10">10</option>
@@ -259,10 +263,13 @@ Select the attribute you'd like to explore further from the first column. Choose
 	</form>
 <br>
 
+<b>
+Want to see the lowest or highest value for a particular attribute? </b> Ex: the lowest unemployment rate, the highest number of murders by gun in a state, the largest population.
+Select an attribute from the first drop-down and whether you'd like to view the minimum or maximum value for that attribute from the second column.
 
-Shows the state with the largest or smallest value of a given attribute as well as the value itself.
 <br>
 	<form method="query" action="minmax.jsp">
+	Select an attribute. <br>
 			<select name="Attribute" size=1>
 			<option value="Population">Population</option>
 			<option value="Gun_Ownership">Gun Ownership</option>
@@ -278,7 +285,8 @@ Shows the state with the largest or smallest value of a given attribute as well 
 			<option value="Firearms">Firearm Murders</option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
-		</select>&nbsp;
+		</select>&nbsp;<p>
+		Choose whether you'd like the minimum or maximum for that attribute. <br>
 		<select name="Choice" size=1>
 			<option value="MIN">Smallest</option>
 			<option value="MAX">Largest</option>
@@ -286,8 +294,8 @@ Shows the state with the largest or smallest value of a given attribute as well 
 <input type="submit" value="submit">
 	</form>
 <br>
-
-Show me all the states that either do or do not require background checks to purchase guns.
+<b>
+Show me all the states that either do or do not require background checks to purchase guns.</b>
 <br>
 	<form method="query" action="backgroundcheck.jsp">
 		<select name="Checker" size=1>
@@ -297,15 +305,16 @@ Show me all the states that either do or do not require background checks to pur
 	</form>
 <br>
 
-Want to see state-based (demographic) data based on a state's political affiliation? Like abortion access, mental health access, poverty level, etc.
+<b> Want to see state-based (demographic) data based on a state's political affiliation? </b> Like abortion access, mental health access, poverty level, etc.
 Select from below whether you'd like to (1) explore by how the state voted in the 2016 Presidential Election or (2) the state's governor, and what political party you'd like to search.
-
 <br>
 	<form method="query" action="politicalexplore.jsp">
 		<select name="PoliticalChoice" size=1>
+		Choose between the 2016 Presidential Election and the state's governor.<br>
 			<option value="2016_Presidential_Election">2016 Presidential Election</option>
 			<option value="Governor">Governor</option>
-		</select>&nbsp; 
+		</select>&nbsp;<p>
+		Choose a political party. <br>
 		<select name="Party" size=1>
 			<option value="Republican">Republican</option>
 			<option value="Democratic">Democrat</option>
@@ -314,7 +323,8 @@ Select from below whether you'd like to (1) explore by how the state voted in th
 	</form>
 <br>
 
-Let's query the states by grade. (Note: The grades listed below are the only grades that states have received in the past year.)
+<b>Let's query the states by grade. </b> (Note: The grades listed below are the only grades that states have received in the past year.)
+
 <br>
 	<form method="query" action="query.jsp">
 		<select name="Grade" size=1>
@@ -330,9 +340,9 @@ Let's query the states by grade. (Note: The grades listed below are the only gra
 		</select>&nbsp;<input type="submit" value="submit">
 	</form>
 <br>
-
-Want to play around with some averages? Select one value or two, and we'll calculate the average across all states.
-
+<b>
+Want to play around with some averages? </b> Select a value from the first drop-down or a value from the second drop-down (or both) and we'll calculate
+the average value for each attribute across all states.
 <br>
 	<form method="query" action="avgmurders.jsp">
 		<select name="StateInfo" size=1>
@@ -342,7 +352,8 @@ Want to play around with some averages? Select one value or two, and we'll calcu
 			<option value="Poverty_Level">Poverty Level</option>
 			<option value="Unemployment_Rate">Unemployment Rate</option>
 			<option value="Mental_Health_Access">Mental Health Access</option>
-		</select>&nbsp;
+		</select>&nbsp;<p>
+		Choose an attribute from this drop-down, or leave it blank. <br>
 		<select name="Murders" size=1>
 			<option value=""></option>
 			<option value="Total_murders">Total Murders</option>
@@ -356,12 +367,12 @@ Want to play around with some averages? Select one value or two, and we'll calcu
 	</form>
 <br>
 
-
-Want to see three pieces of information (one from each table) for all states at the same time? Select the attributes below that you'd like to display.
-
+<b>
+Want to see three pieces of information (one from each table) for all states at the same time? </b> Select the attributes below that you'd like to display.
 <br>
 	<form method="query" action="triquery.jsp">
 		<select name="StateInfo" size=1>
+		Choose an attribute related to demographic data, or leave this drop-down blank. <br>
 		    <option value=""></option>
 			<option value="Population">Population</option>
 			<option value="Gun_Ownership">Gun Ownership</option>
@@ -371,7 +382,8 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Mental_Health_Access">Mental Health Access</option>
 			<option value="2016_Presidential_Election">2016 Presidential Election</option>
 			<option value="Governor">Governor</option>
-		</select>&nbsp;
+		</select>&nbsp;<p>
+		Choose a value from this drop-down, or leave it blank. <br>
 		<select name="Murders" size=1>
 			<option value=""></option>
 			<option value="Total_murders">Total Murders</option>
@@ -380,7 +392,8 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Rifles">Rifle Murders</option>
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
-		</select>&nbsp;
+		</select>&nbsp;<p>
+		Choose a value from this drop-down, or leave it blank. <br>
 		<select name="GunControlLaws" size=1>
 			<option value=""></option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
@@ -392,10 +405,10 @@ Want to see three pieces of information (one from each table) for all states at 
 	</form>
 <br>
 
-Select two states below to compare them across multiple attributes (one from each table).
-
+<b>Select two states below to compare them across multiple attributes. </b> From the three drop-downs following your selected states, choose up to three attributes (one from each table) against which you wish to compare your two states.
 <br>
 	<form method="query" action="statecompare.jsp">
+		Choose your first state. <br>
 		<select name="State1" size=1>
 			<option value="Alabama">Alabama</option>
 			<option value="Alaska">Alaska</option>
@@ -448,7 +461,8 @@ Select two states below to compare them across multiple attributes (one from eac
 			<option value="West Virginia">West Virginia</option>
 			<option value="Wisconsin">Wisconsin</option>
 			<option value="Wyoming">Wyoming</option>
-		</select>&nbsp;
+		</select>&nbsp;<p>
+		Select a second state. <br>
 		<select name="State2" size=1>
 			<option value="Alabama">Alabama</option>
 			<option value="Alaska">Alaska</option>
@@ -501,7 +515,8 @@ Select two states below to compare them across multiple attributes (one from eac
 			<option value="West Virginia">West Virginia</option>
 			<option value="Wisconsin">Wisconsin</option>
 			<option value="Wyoming">Wyoming</option>
-		</select>&nbsp;
+		</select>&nbsp;<p>
+		Select a demographic-related attribute, or leave this column blank. <br>
 		<select name="StateInfo" size=1>
 		    <option value=""></option>
 			<option value="Population">Population</option>
@@ -512,7 +527,8 @@ Select two states below to compare them across multiple attributes (one from eac
 			<option value="Mental_Health_Access">Mental Health Access</option>
 			<option value="2016_Presidential_Election">2016 Presidential Election</option>
 			<option value="Governor">Governor</option>
-		</select>&nbsp;
+		</select>&nbsp;<p>
+		Choose a value from this drop-down, or leave it blank. <br>
 		<select name="Murders" size=1>
 			<option value=""></option>
 			<option value="Total_murders">Total Murders</option>
@@ -521,7 +537,8 @@ Select two states below to compare them across multiple attributes (one from eac
 			<option value="Rifles">Rifle Murders</option>
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
-		</select>&nbsp;
+		</select>&nbsp;<p>
+		Choose a value from this drop-down, or leave it blank. <br>
 		<select name="GunControlLaws" size=1>
 			<option value=""></option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
