@@ -48,6 +48,16 @@ Have fun playing around on our site! There are a bunch of powerful queries that 
   <input type="submit" value="Show me some cool findings." />
 </form>
 <br>
+ <!-- Show html form to i) display something, ii) choose an action via a 
+  | radio button -->
+<form method="get" action="graphs.jsp" enctype=text/plain>
+    <!-- note the show.jsp will be invoked when the choice is made -->
+	<!-- The next lines give HTML for radio buttons being displayed -->
+	<br>
+	<b>Want to see some cool graphs?</b>
+  <input type="submit" value="Show me some cool graphs." />
+</form>
+<br>
 
 <b>See our full data sets:</b>
  <!-- Show html form to i) display something, ii) choose an action via a 
