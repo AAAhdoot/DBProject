@@ -1,52 +1,52 @@
-State,Population,Gun_Ownership,Income_Level,Poverty_Level,Unemployment_Rate,Mental_Health_Access,2016_Presidential_Election,Governor,CCW_Type,Percent_No_Abortion_Provider,Region,Division
-Alabama,4779736,48.9,47,19.2,5.4,46,Republican,Republican,Limited Discretion,59,South,East South Central
-Alaska,710231,61.7,11,11.4,6.9,13,Republican,Independent,None,17,West,Pacific
-Arizona,6392017,32.3,31,18.2,5.5,50,Republican,Republican,None,14,West,Mountain
-Arkansas,2915918,57.9,49,18.7,4,47,Republican,Republican,Limited Discretion,78,South,West South Central
-California,37253956,20.1,3,16.4,5.5,23,Democratic,Democratic,May Issue,1,West,Pacific
-Colorado,5029196,34.3,16,12.1,3.6,25,Democratic,Democratic,Limited Discretion,12,West,Mountain
-Connecticut,3574097,16.6,4,10.8,5.4,1,Democratic,Democratic,May Issue,5,Northeast,New England
-Delaware,897934,5.2,12,13,4.3,11,Democratic,Democratic,May Issue,18,South,South Atlantic
-District of Columbia,601723,25.9,5,18.4,6.1,18,Democratic,Democratic,May Issue,0,South,South Atlantic
-Florida,19687653,32.5,38,16.6,6.2,28,Republican,Republican,No Discretion,21,South,South Atlantic
-Georgia,19687653,32.5,34,18.4,5.1,34,Republican,Republican,Limited Discretion,57,South,South Atlantic
-Hawaii,9920000,31.6,9,11.5,3.3,16,Democratic,Democratic,May Issue,0,West,Pacific
-Idaho,1360301,45.1,41,14.8,3.8,48,Republican,Republican,None,69,West,Mountain
-Illinois,1567582,56.9,19,14.3,5.5,15,Democratic,Republican,Limited Discretion,39,Midwest,East North Central
-Indiana,12830632,26.2,32,15.2,4.5,45,Republican,Republican,Limited Discretion,61,Midwest,East North Central
-Iowa,6483802,33.8,25,12.3,4.5,7,Republican,Republican,Limited Discretion,50,Midwest,West North Central
-Kansas,3046355,33.8,27,13.5,4.4,21,Republican,Republican,None,74,Midwest,West North Central
-Kentucky,2853118,32.2,48,19,5,19,Republican,Republican,No Discretion,74,South,East South Central
-Louisiana,4339367,42.4,45,19.9,6.4,42,Republican,Democratic,No Discretion,63,South,West South Central
-Maine,4533372,44.5,33,14,4.1,10,Democratic,Republican,None,47,Northeast,New England
-Maryland,1328361,22.6,1,10.4,4.2,14,Democratic,Republican,May Issue,19,South,South Atlantic
-Massachusetts,5773552,20.7,6,11.7,3.6,2,Democratic,Republican,May Issue,9,Northeast,New England
-Michigan,6547629,22.6,35,16.2,4.6,17,Republican,Republican,No Discretion,34,Midwest,East North Central
-Minnesota,9883640,28.8,10,11.4,4,5,Democratic,Democratic,Limited Discretion,59,Midwest,West North Central
-Mississippi,5303925,36.7,51,21.9,6,44,Republican,Republican,No Discretion,91,South,East South Central
-Missouri,2967297,42.8,37,15.5,5.2,31,Republican,Republican,Limited Discretion,74,Midwest,West North Central
-Montana,5988927,27.1,39,15.2,4.6,39,Republican,Democratic,Limited Discretion,46,West,Mountain
-Nebraska,989415,52.3,23,12.3,3.2,27,Republican,Republican,No Discretion,41,Midwest,West North Central
-Nevada,1826341,19.8,28,15.4,5.8,51,Democratic,Republican,No Discretion,6,West,Mountain
-New Hampshire,2700551,37.5,7,9.2,2.9,20,Democratic,Republican,Limited Discretion,12,Northeast,New England
-New Jersey,1316470,14.4,2,11.1,5.3,6,Democratic,Republican,May Issue,9,Northeast,Middle Atlantic
-New Mexico,8791894,11.3,44,20.6,6.7,22,Democratic,Republican,No Discretion,48,West,Mountain
-New York,2059179,49.9,17,15.9,5,12,Democratic,Democratic,May Issue,8,Northeast,Middle Atlantic
-North Carolina,19378102,10.3,40,17.2,4.7,33,Republican,Republican,No Discretion,49,South,South Atlantic
-North Dakota,9535483,28.7,21,11.1,3,8,Republican,Republican,Limited Discretion,73,Midwest,West North Central
-Ohio,672591,47.9,36,15.8,4.8,26,Republican,Republican,No Discretion,51,Midwest,East North Central
-Oklahoma,11536504,19.6,42,16.6,5.2,24,Republican,Republican,No Discretion,55,South,West South Central
-Oregon,3751351,31.2,30,16.4,5.5,49,Democratic,Democratic,Limited Discretion,22,West,Pacific
-Pennsylvania,3831074,26.6,24,13.6,5.7,9,Republican,Democratic,Limited Discretion,47,Northeast,Middle Atlantic
-Rhode Island,12702379,27.1,18,14.8,5.6,36,Democratic,Democratic,May Issue,37,Northeast,New England
-South Carolina,1052567,5.8,43,17.9,4.9,37,Republican,Republican,No Discretion,60,South,South Atlantic
-South Dakota,4625364,44.4,29,14.1,2.9,4,Republican,Republican,Limited Discretion,77,Midwest,West North Central
-Tennessee,814180,35,46,18.2,4.6,41,Republican,Republican,No Discretion,58,South,East South Central
-Texas,6346105,39.4,26,17.2,4.8,32,Republican,Republican,No Discretion,31,South,West South Central
-Utah,25145561,35.7,15,11.8,3.4,40,Republican,Republican,Limited Discretion,34,West,Mountain
-Vermont,2763885,31.9,20,12.2,3.3,3,Democratic,Republican,None,35,Northeast,New England
-Virginia,625741,28.8,8,11.8,4,38,Democratic,Democratic,Limited Discretion,59,South,South Atlantic
-Washington,8001024,29.3,13,13.2,5.6,30,Democratic,Democratic,No Discretion,13,West,Pacific
-West Virginia,6724540,27.7,50,18.3,5.8,43,Republican,Democratic,None,82,South,South Atlantic
-Wisconsin,1852994,54.2,22,13.2,4.1,35,Republican,Republican,No Discretion,60,Midwest,East North Central
-Wyoming,5686986,34.7,14,10.6,5.5,29,Republican,Republican,None,96,West,Mountain
+State,Population,Gun_Ownership,Income_Level,Poverty_Level,Unemployment_Rate,Mental_Health_Access,2016_Presidential_Election,Governor,Percent_No_Abortion_Provider,Region,Division
+Alabama,4779736,48.9,47,19.2,5.4,46,Republican,Republican,59,South,East South Central
+Alaska,710231,61.7,11,11.4,6.9,13,Republican,Independent,17,West,Pacific
+Arizona,6392017,32.3,31,18.2,5.5,50,Republican,Republican,14,West,Mountain
+Arkansas,2915918,57.9,49,18.7,4,47,Republican,Republican,78,South,West South Central
+California,37253956,20.1,3,16.4,5.5,23,Democratic,Democratic,1,West,Pacific
+Colorado,5029196,34.3,16,12.1,3.6,25,Democratic,Democratic,12,West,Mountain
+Connecticut,3574097,16.6,4,10.8,5.4,1,Democratic,Democratic,5,Northeast,New England
+Delaware,897934,5.2,12,13,4.3,11,Democratic,Democratic,18,South,South Atlantic
+District of Columbia,601723,25.9,5,18.4,6.1,18,Democratic,Democratic,0,South,South Atlantic
+Florida,19687653,32.5,38,16.6,6.2,28,Republican,Republican,21,South,South Atlantic
+Georgia,19687653,32.5,34,18.4,5.1,34,Republican,Republican,57,South,South Atlantic
+Hawaii,9920000,31.6,9,11.5,3.3,16,Democratic,Democratic,0,West,Pacific
+Idaho,1360301,45.1,41,14.8,3.8,48,Republican,Republican,69,West,Mountain
+Illinois,1567582,56.9,19,14.3,5.5,15,Democratic,Republican,39,Midwest,East North Central
+Indiana,12830632,26.2,32,15.2,4.5,45,Republican,Republican,61,Midwest,East North Central
+Iowa,6483802,33.8,25,12.3,4.5,7,Republican,Republican,50,Midwest,West North Central
+Kansas,3046355,33.8,27,13.5,4.4,21,Republican,Republican,74,Midwest,West North Central
+Kentucky,2853118,32.2,48,19,5,19,Republican,Republican,74,South,East South Central
+Louisiana,4339367,42.4,45,19.9,6.4,42,Republican,Democratic,63,South,West South Central
+Maine,4533372,44.5,33,14,4.1,10,Democratic,Republican,47,Northeast,New England
+Maryland,1328361,22.6,1,10.4,4.2,14,Democratic,Republican,19,South,South Atlantic
+Massachusetts,5773552,20.7,6,11.7,3.6,2,Democratic,Republican,9,Northeast,New England
+Michigan,6547629,22.6,35,16.2,4.6,17,Republican,Republican,34,Midwest,East North Central
+Minnesota,9883640,28.8,10,11.4,4,5,Democratic,Democratic,59,Midwest,West North Central
+Mississippi,5303925,36.7,51,21.9,6,44,Republican,Republican,91,South,East South Central
+Missouri,2967297,42.8,37,15.5,5.2,31,Republican,Republican,74,Midwest,West North Central
+Montana,5988927,27.1,39,15.2,4.6,39,Republican,Democratic,46,West,Mountain
+Nebraska,989415,52.3,23,12.3,3.2,27,Republican,Republican,41,Midwest,West North Central
+Nevada,1826341,19.8,28,15.4,5.8,51,Democratic,Republican,6,West,Mountain
+New Hampshire,2700551,37.5,7,9.2,2.9,20,Democratic,Republican,12,Northeast,New England
+New Jersey,1316470,14.4,2,11.1,5.3,6,Democratic,Republican,9,Northeast,Middle Atlantic
+New Mexico,8791894,11.3,44,20.6,6.7,22,Democratic,Republican,48,West,Mountain
+New York,2059179,49.9,17,15.9,5,12,Democratic,Democratic,8,Northeast,Middle Atlantic
+North Carolina,19378102,10.3,40,17.2,4.7,33,Republican,Republican,49,South,South Atlantic
+North Dakota,9535483,28.7,21,11.1,3,8,Republican,Republican,73,Midwest,West North Central
+Ohio,672591,47.9,36,15.8,4.8,26,Republican,Republican,51,Midwest,East North Central
+Oklahoma,11536504,19.6,42,16.6,5.2,24,Republican,Republican,55,South,West South Central
+Oregon,3751351,31.2,30,16.4,5.5,49,Democratic,Democratic,22,West,Pacific
+Pennsylvania,3831074,26.6,24,13.6,5.7,9,Republican,Democratic,47,Northeast,Middle Atlantic
+Rhode Island,12702379,27.1,18,14.8,5.6,36,Democratic,Democratic,37,Northeast,New England
+South Carolina,1052567,5.8,43,17.9,4.9,37,Republican,Republican,60,South,South Atlantic
+South Dakota,4625364,44.4,29,14.1,2.9,4,Republican,Republican,77,Midwest,West North Central
+Tennessee,814180,35,46,18.2,4.6,41,Republican,Republican,58,South,East South Central
+Texas,6346105,39.4,26,17.2,4.8,32,Republican,Republican,31,South,West South Central
+Utah,25145561,35.7,15,11.8,3.4,40,Republican,Republican,34,West,Mountain
+Vermont,2763885,31.9,20,12.2,3.3,3,Democratic,Republican,35,Northeast,New England
+Virginia,625741,28.8,8,11.8,4,38,Democratic,Democratic,59,South,South Atlantic
+Washington,8001024,29.3,13,13.2,5.6,30,Democratic,Democratic,13,West,Pacific
+West Virginia,6724540,27.7,50,18.3,5.8,43,Republican,Democratic,82,South,South Atlantic
+Wisconsin,1852994,54.2,22,13.2,4.1,35,Republican,Republican,60,Midwest,East North Central
+Wyoming,5686986,34.7,14,10.6,5.5,29,Republican,Republican,96,West,Mountain
