@@ -77,10 +77,6 @@
 			out.print("</td>");
 			
 			out.print("<td>");
-			out.print("Concealed Carry Limit");
-			out.print("</td>");
-			
-			out.print("<td>");
 			out.print("% Women with No Abortion Provider in County");
 			out.print("</td>");
 			
@@ -138,11 +134,7 @@
 				out.print("<td>");
 				out.print(result.getString("Governor"));
 				out.print("</td>");
-				
-				out.print("<td>");
-				out.print(result.getString("CCW_Type"));
-				out.print("</td>");
-				
+
 				out.print("<td>");
 				out.print(result.getString("Percent_No_Abortion_Provider"));
 				out.print("</td>");
