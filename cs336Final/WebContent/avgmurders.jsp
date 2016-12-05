@@ -63,10 +63,10 @@
 			ResultSet result = stmt.executeQuery(str);
 			
 			//Make an HTML table to show the results in:
-			out.print("<table>");
+			out.print("<table BORDER>");
 
 			//make a row
-			out.print("<tr>");
+			out.print("<tr ALIGN = CENTER>");
 			//make a column
 			
 			if(empty1==0){
@@ -87,7 +87,7 @@
 			//parse out the results
 			while (result.next()) {
 				//make a row
-				out.print("<tr>");
+				out.print("<tr ALIGN = CENTER>");
 				//make a column
 			
 				if(empty1==0){

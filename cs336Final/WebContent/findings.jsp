@@ -1,4 +1,4 @@
-Here are some cool findings from our data!
+<b>Here are some cool findings from our data!</b>
 
 <br>
 <br>
@@ -37,7 +37,8 @@ WHERE Background_Checks = "no" AND StateInfo.State = GunControlLaws.State AND 20
 
 <br>
 
-Result: The states that do not require background checks to purchase a gun, and who voted Republican in the 2016 Presidential Election, tend to be more dangerous - that is, their ranks for gun death rates are high (in the top half).
+<b>Result: The states that do not require background checks to purchase a gun, and who voted Republican in the 2016 Presidential Election, <u>tend to be more dangerous</u> - that is, their ranks for gun death rates are high (in the top half).
+</b>
 <br>
 <br>
 
@@ -68,8 +69,8 @@ WHERE Background_Checks = "yes" AND StateInfo.State = GunControlLaws.State<br>
 
 <br>
 
-Result: The states that do require background checks to purchase a gun tend to be 'safer' - that is, their gun death rate ranks are low.<br>
-
+<b>Result: The states that do require background checks to purchase a gun <u>tend to be 'safer'</u> - that is, their gun death rate ranks are low.<br>
+</b>
 <br>
 
 SELECT StateInfo.State, StateInfo.Percent_No_Abortion_Provider, StateInfo.2016_Presidential_Election<br>
@@ -93,8 +94,8 @@ WHERE Percent_No_Abortion_Provider > 60<br>
 
 <br>
 
-Result: The states in which there is increased difficulty of having an abortion voted all Republican in the 2016 Presidential Election.<br>
-
+<b>Result: The states in which there is increased difficulty of having an abortion voted all Republican in the 2016 Presidential Election.<br>
+</b>
 <br>
 
 Select StateInfo.State, Gun_Ownership, 2016_Presidential_Election<br>
@@ -123,8 +124,8 @@ LIMIT 15<br>
 
 <br>
 
-Result: The states that have higher rates of gun ownership are overwhelmingly Republican. Of the 15 states that have the highest rates of gun ownership, more than 10 voted Republican in the 2016 Presidential Election, and more than 10 have Republican governors. <br>
-
+<b>Result: The states that have <u>higher rates of gun ownership</u> are <u>overwhelmingly Republican</u>. Of the 15 states that have the highest rates of gun ownership, more than 10 voted Republican in the 2016 Presidential Election, and more than 10 have Republican governors. <br>
+</b>
 (Interestingly, the states with the lowest rates of gun ownership are overwhelmingly Democratic.) <br>
 
 <br>
@@ -148,9 +149,9 @@ LIMIT 10 <br>
 'Minnesota','10','Democratic'<br>
 
 <br>
-
-Result: The 10 states with the highest incomes all voted Democratic in the most recent election. (Conversely, of the 10 states with the lowest incomes, 9 voted Republican in the most recent election.)<br>
-
+<b>
+Result: The 10 states with the <u>highest incomes</u> all voted <u>Democratic</u> in the most recent election. (Conversely, of the 10 states with the lowest incomes, 9 voted Republican in the most recent election.)<br>
+</b>
 <br>
 
 Select StateInfo.State, StateInfo.Income_Level, GunControlLaws.Grade<br>
@@ -174,4 +175,5 @@ LIMIT 10<br>
 
 <br>
 
-Result: The 10 states with the lowest average income all have failing grades for their gun laws.<br>
+<b> Result: The 10 states with the lowest average income all have failing grades for their gun laws.<br>
+</b>

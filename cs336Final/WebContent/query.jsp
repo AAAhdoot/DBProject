@@ -32,10 +32,10 @@
 			ResultSet result = stmt.executeQuery(str);
 
 			//Make an HTML table to show the results in:
-			out.print("<table>");
+			out.print("<table BORDER>");
 
 			//make a row
-			out.print("<tr>");
+			out.print("<tr ALIGN=CENTER>");
 			//make a column
 			out.print("<td>");
 			//print out column header
@@ -54,7 +54,7 @@
 			//parse out the results
 			while (result.next()) {
 				//make a row
-				out.print("<tr>");
+				out.print("<tr ALIGN=CENTER>");
 				//make a column
 				out.print("<td>");
 				//Print out current bar name:
