@@ -34,7 +34,7 @@
 			if(param.equals("Population") || param.equals("Gun_Ownership") || param.equals("Poverty_Level") || param.equals("Unemployment_Rate") || param.equals("Mental_Health_Access") || param.equals("Percent_No_Abortion_Provider")){
 				table = "StateInfo";
 			}
-			else if(param.equals("Total_murders") || param.equals("Gun_murders") || param.equals("Handguns") || param.equals("Shotguns") || param.equals("Rifles") || param.equals("Firearms")){
+			else if(param.equals("Total_murders") || param.equals("Gun_murders") || param.equals("Handguns") || param.equals("Shotguns") || param.equals("Rifles") || param.equals("Firearms") || param.equals("Murders_per_capita") || param.equals("Gun_murders_per_capita")){
 				table = "Murders";
 			}
 			else{

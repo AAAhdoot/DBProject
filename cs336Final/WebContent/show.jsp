@@ -115,6 +115,14 @@
 				out.print("<td>");
 				out.print("Murders by Firearm");
 				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Murders Per Capita");
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print("Gun Murders Per Capita");
+				out.print("</td>");
 			}
 			
 			if (entity.equals("GunControlLaws")){
@@ -222,6 +230,14 @@
 					
 					out.print("<td>");
 					out.print(result.getString("Firearms"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Murders_per_capita"));
+					out.print("</td>");
+					
+					out.print("<td>");
+					out.print(result.getString("Gun_murders_per_capita"));
 					out.print("</td>");
 				}
 				

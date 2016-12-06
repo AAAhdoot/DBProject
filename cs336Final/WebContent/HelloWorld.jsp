@@ -233,6 +233,8 @@ Select a state.
 			<option value="Rifles">Rifle Murders</option>
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
+			<option value="Murders_per_capita">Murders Per Capita</option>
+			<option value="Gun_murders_per_capita">Gun Murders Per Capita</option>
 		</select>&nbsp;<p>
 		Would you like to add an attribute related to gun control laws? If not, leave this drop-down blank.<br>
 		<select name="GunControlLaws" size=1>
@@ -266,6 +268,8 @@ Select the attribute you'd like to explore further from the first column. Choose
 			<option value="Rifles">Rifle Murders</option>
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
+			<option value="Murders_per_capita">Murders Per Capita</option>
+			<option value="Gun_murders_per_capita">Gun Murders Per Capita</option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
 		</select>&nbsp;<p>
@@ -310,6 +314,8 @@ Select an attribute from the first drop-down and whether you'd like to view the 
 			<option value="Rifles">Rifle Murders</option>
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
+			<option value="Murders_per_capita">Murders Per Capita</option>
+			<option value="Gun_murders_per_capita">Gun Murders Per Capita</option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
 		</select>&nbsp;<p>
@@ -389,6 +395,8 @@ the average value for each attribute across all states.
 			<option value="Rifles">Rifle Murders</option>
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
+			<option value="Murders_per_capita">Murders Per Capita</option>
+			<option value="Gun_murders_per_capita">Gun Murders Per Capita</option>
 		</select>&nbsp;
 		<input type="submit" value="submit">
 	</form>
@@ -504,6 +512,8 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Rifles">Rifle Murders</option>
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
+			<option value="Murders_per_capita">Murders Per Capita</option>
+			<option value="Gun_murders_per_capita">Gun Murders Per Capita</option>
 		</select>&nbsp;<p>
 		Choose a value from this drop-down, or leave it blank. <br>
 		<select name="GunControlLaws" size=1>
@@ -649,6 +659,8 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Rifles">Rifle Murders</option>
 			<option value="Shotguns">Shotgun Murders</option>
 			<option value="Firearms">Firearm Murders</option>
+			<option value="Murders_per_capita">Murders Per Capita</option>
+			<option value="Gun_murders_per_capita">Gun Murders Per Capita</option>
 		</select>&nbsp;<p>
 		Choose a value from this drop-down, or leave it blank. <br>
 		<select name="GunControlLaws" size=1>
