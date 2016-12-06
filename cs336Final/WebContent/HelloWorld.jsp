@@ -442,6 +442,7 @@ Select a category.
 			<select name="attribute" size=1>
 			<option value="Mental_Health_Access">Mental Health Access</option>
 			<option value="Poverty_Level">Poverty Level</option>
+			<option value="Income_Level">Income Level</option>
 			<option value="Gun_Ownership">Gun Ownership</option>
 			<option value="Percent_No_Abortion_Provider">Percent No Abortion Provider</option>
 			<option value="Unemployment_Rate">Unemployment Rate</option>

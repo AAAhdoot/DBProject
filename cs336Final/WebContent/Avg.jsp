@@ -959,12 +959,404 @@
 		}
 		}
 			
+else if(attribute.equals("Gun_Ownership")){
+				
+				str = "SELECT " + table_result + finale + "AND" + "  StateInfo.Gun_Ownership <= 25 AND Gun_Ownership>=5;";
+				str2 = "SELECT " + table_result + finale + "AND" +  "  StateInfo.Gun_Ownership <= 40 AND Gun_Ownership>=26;";
+				str3 = "SELECT " + table_result + finale + "AND" +  "  StateInfo.Ownership <= 62 AND Ownership>=41;";	
+				
+			out.print(str);
+				
+		ResultSet result = stmt.executeQuery(str);
+		while (result.next()) {
+			//make a row
+			out.print("<tr ALIGN=CENTER>");
+			//make a column
+			out.print("<td>");
+			//Print out current bar or beer name:
+			if(count == 0){
+				out.print("5 to 25");
+			}
+			else if(count == 1){
+				out.print("26 to 40");
+			}
+			else{
+				out.print("41 to 62");
+			}
+			
+			out.print("</td>");
+			//Print out current bar/beer additional info: Manf or Address
+			if (table.equals("StateInfo")){
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Population" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Gun_Ownership" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Income_Level" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Poverty_Level" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Unemployment_Rate" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Mental_Health_Access" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Percent_No_Abortion_Provider" + ")"));
+				out.print("</td>");
+
+			}
+			
+			if (table.equals("Murders")){
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Total_murders" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Gun_murders" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Handguns" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Rifles" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Shotguns" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Firearms" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Murders_per_capita" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Gun_murders_per_capita" + ")"));
+				out.print("</td>");
+			}
+			
+			if (table.equals("GunControlLaws")){
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Gun_Law_Rank" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Gun_Death_Rate_Rank" + ")"));
+				out.print("</td>");
+				
+				
+				
+			}
+			if(!result.next()){
+				if(count == 0){
+					count++;
+					result = stmt.executeQuery(str2);
+					continue;
+				}
+				else if(count == 1){
+					count++;
+					result = stmt.executeQuery(str3);
+					continue;
+				}
+				else{
+					break;
+				}
+			}
+			
+			
+		}
+		}
+			
+else if(attribute.equals("Percent_No_Abortion_Provider")){
+	
+	str = "SELECT " + table_result + finale + "AND" + "  StateInfo.Percent_No_Abortion_Provider <= 25 AND Percent_No_Abortion_Provider>=0;";
+	str2 = "SELECT " + table_result + finale + "AND" + "  StateInfo.Percent_No_Abortion_Provider <= 50 AND Percent_No_Abortion_Provider>=26;";
+	str3 = "SELECT " + table_result + finale + "AND" + "  StateInfo.Percent_No_Abortion_Provider <= 75 AND Percent_No_Abortion_Provider>=51;";
+	str4 = "SELECT " + table_result + finale + "AND" + "  StateInfo.Percent_No_Abortion_Provider <= 100 AND Percent_No_Abortion_Provider>=76;";
+	
+out.print(table);
+	
+	
+ResultSet result = stmt.executeQuery(str);
+while (result.next()) {
+//make a row
+out.print("<tr ALIGN=CENTER>");
+//make a column
+out.print("<td>");
+//Print out current bar or beer name:
+if(count == 0){
+	out.print("0 to 25");
+}
+else if(count == 1){
+	out.print("26 to 50");
+}
+else if (count ==2){
+	out.print("51 to 75");
+}
+else{
+	out.print("76 to 100");
+}
+
+out.print("</td>");
+//Print out current bar/beer additional info: Manf or Address
+if (table.equals("StateInfo")){
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Population" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Gun_Ownership" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Income_Level" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Poverty_Level" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Unemployment_Rate" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Mental_Health_Access" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Percent_No_Abortion_Provider" + ")"));
+	out.print("</td>");
+
+}
+
+if (table.equals("Murders")){
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Total_murders" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Gun_murders" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Handguns" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Rifles" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Shotguns" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Firearms" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Murders_per_capita" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Gun_murders_per_capita" + ")"));
+	out.print("</td>");
+}
+
+if (table.equals("GunControlLaws")){
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Gun_Law_Rank" + ")"));
+	out.print("</td>");
+	
+	out.print("<td>");
+	out.print(result.getString("AVG(" + "Gun_Death_Rate_Rank" + ")"));
+	out.print("</td>");
+	
+	
+	
+}
+if(!result.next()){
+	if(count == 0){
+		count++;
+		result = stmt.executeQuery(str2);
+		continue;
+	}
+	else if(count == 1){
+		count++;
+		result = stmt.executeQuery(str3);
+		continue;
+	}
+	else if(count == 2){
+		count++;
+		result = stmt.executeQuery(str4);
+		continue;
+	}
+	else{
+		break;
+	}
+}
+
+
+}
+}
+	else if(attribute.equals("Income_Level")){
+				str =  "SELECT " + table_result + finale + "AND" + "  StateInfo.Income_Level <= 13 AND Income_Level>=1;";
+				str2 = "SELECT " + table_result + finale + "AND"  + "  StateInfo.Income_Level <= 26 AND Income_Level>=14;";
+				str3 = "SELECT " + table_result + finale + "AND"  +  " StateInfo.Income_Level <= 38 AND Income_Level>=27;";	
+				str4 = "SELECT " + table_result + finale + "AND"  +  " StateInfo.Income_Level <= 51 AND Income_Level>=39;";
+
+		
+		ResultSet result = stmt.executeQuery(str);
+		
+		out.print(str);
+		
+		//parse out the results
+		while (result.next()) {
+			//make a row
+			out.print("<tr ALIGN=CENTER>");
+			//make a column
+			out.print("<td>");
+			//Print out current bar or beer name:
+			if(count == 0){
+				out.print("1 to 13");
+			}
+			else if(count == 1){
+				out.print("14 to 26");
+			}
+			else if(count == 2){
+				out.print("27 to 39");
+			}
+			else{
+				out.print("40 to 51");
+			}
+			
+			out.print("</td>");
+			//Print out current bar/beer additional info: Manf or Address
+			if (table.equals("StateInfo")){
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Population" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Gun_Ownership" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Income_Level" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Poverty_Level" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Unemployment_Rate" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Mental_Health_Access" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Percent_No_Abortion_Provider" + ")"));
+				out.print("</td>");
+
+			}
+			
+			if (table.equals("Murders")){
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Total_murders" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Gun_murders" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Handguns" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Rifles" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Shotguns" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Firearms" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Murders_per_capita" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Gun_murders_per_capita" + ")"));
+				out.print("</td>");
+			}
+			
+			if (table.equals("GunControlLaws")){
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Gun_Law_Rank" + ")"));
+				out.print("</td>");
+				
+				out.print("<td>");
+				out.print(result.getString("AVG(" + "Gun_Death_Rate_Rank" + ")"));
+				out.print("</td>");
+				
+				
+				
+			}
+			if(!result.next()){
+				if(count == 0){
+					count++;
+					result = stmt.executeQuery(str2);
+					continue;
+				}
+				else if(count == 1){
+					count++;
+					result = stmt.executeQuery(str3);
+					continue;
+				}
+				else if(count == 2){
+					count++;
+					result = stmt.executeQuery(str4);
+					continue;
+				}
+				else{
+					break;
+				}
+			}
+			
+			
+		}
+			
 			out.print("</table>");
 
 			//close the connection.
 			con.close();
 
-		} catch (Exception e) {
+		} 
+		}catch (Exception e) {
 		}
 	%>
 
