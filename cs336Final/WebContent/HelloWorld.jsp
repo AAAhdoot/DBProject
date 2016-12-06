@@ -455,6 +455,30 @@ Select a category.
 	</form>
 <br>
 
+<b>You get an average! You get an average! We all get averages!</b>
+
+<form method="query" action="Avg.jsp">
+		Select the type of data you'd like to view. <br>
+			<select name="attribute" size=1>
+			<option value="Mental_Health_Access">Mental Health Access</option>
+			<option value="Poverty_Level">Poverty Level</option>
+			<option value="Gun_Ownership">Gun Ownership</option>
+			<option value="Percent_No_Abortion_Provider">Percent No Abortion Provider</option>
+			<option value="Unemployment_Rate">Unemployment Rate</option>
+			<option value="2016_Presidential_Election">Political Affiliation</option>
+			<option value="CCW_Type">Concealed Carry Permit Type</option>
+			<option value="Region">Region</option>
+			<option value="Division">Division</option>
+		</select>&nbsp;<br>
+		<select name="table" size=1>
+			<option value="StateInfo">Demographic Data</option>
+			<option value="Murders">Gun Violence Data</option>
+			<option value="GunControlLaws">Gun Control Data</option>
+		</select>&nbsp;<br>
+		<input type="submit" value="submit">
+	</form>
+<br>
+
 <b>
 Want to see three pieces of information (one from each table) for all states at the same time? </b> Select the attributes below that you'd like to display.
 <br>
