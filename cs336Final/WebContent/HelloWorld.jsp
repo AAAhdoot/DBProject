@@ -11,7 +11,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>CS336 Final Project</title>
 </head>
-<body>
+<body BACKGROUND = "city.png">
 
 <b><font color = "blue">Welcome to our final project for CS336 - Databases (Fall 2016).</b>
 We thought it'd be interesting to explore incidences of gun violence across the nation, and link in some data that isn't usually included when discussing gun violence.
