@@ -7,21 +7,21 @@ TODO
 4. add more data (region, state senate, 2014 data, more info re: gun laws, type of death)
 
 QUERIES TO ADD:
-1. difference in per-capita stats (violence by dem & repub states)
-2. region-based average // show average X by region (single drop-down)
-3. division-based average // show average X by division (single drop-down)
-4. move concealed carry type to GunControlLaws
-5. deal with florida and alabama
-6. for averages, add third drop-down that checks 'all states', 'republican', or 'democratic'
-7. clean up the text on the front-end.
-8. put all states avg under region
-9. change the ordering of some queries
-10. mental health < 25 check avg (gun murders)
-11. don't let background check stick out - add concealed carry
-12. drop downs for: mental health, unemployment rate, poverty level, percent gun owners, percent no abortion provider
-13. show average X by selected grade
-14. show average X by gun law rank
-15. likelihood of gun murder in X 
+- difference in per-capita stats (violence by dem & repub states)
+- region-based average // show average X by region (single drop-down)
+- division-based average // show average X by division (single drop-down)
+- move concealed carry type to GunControlLaws
+- deal with florida and alabama
+- for averages, add third drop-down that checks 'all states', 'republican', or 'democratic'
+- clean up the text on the front-end.
+- put all states avg under region
+- change the ordering of some queries
+- mental health < 25 check avg (gun murders)
+- don't let background check stick out - add concealed carry
+- drop downs for: mental health, unemployment rate, poverty level, percent gun owners, percent no abortion provider
+- show average X by selected grade
+- show average X by gun law rank
+- likelihood of gun murder in X 
 
 
 
