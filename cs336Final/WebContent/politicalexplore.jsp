@@ -30,7 +30,7 @@
 			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
 			String str = "SELECT * FROM StateInfo WHERE " + entity + " = \"" + entity2 + "\";";
 			//Run the query against the database.
-			out.print(str);
+
 			ResultSet result = stmt.executeQuery(str);
 			
 			//Make an HTML table to show the results in:
@@ -158,6 +158,8 @@
 		} catch (Exception e) {
 		}
 	%>
+	
+	<img src="presidentialelectionavgmurder.png" />
 
 </body>
 </html>

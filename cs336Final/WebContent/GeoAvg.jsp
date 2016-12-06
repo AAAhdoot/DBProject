@@ -233,6 +233,8 @@
 		} catch (Exception e) {
 		}
 	%>
+<img src="murdersbydivision.png" />
 
+<img src="murdersbyregion.png" />
 </body>
 </html>
