@@ -16,3 +16,5 @@ http://smartgunlaws.org/gun-laws/policy-areas/firearms-in-public-places/conceale
 <br>
 https://en.wikipedia.org/wiki/Gun_laws_in_the_District_of_Columbia (for StateInfo)
 <br>
+https://engage.sitrion.com/register/PublishingImages/Denver-faded.jpg
+<br>
