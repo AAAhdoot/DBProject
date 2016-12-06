@@ -48,6 +48,17 @@ Have fun playing around on our site! There are a bunch of powerful queries that 
   <input type="submit" value="Show me some cool findings." />
 </form>
 <br>
+<!-- Show html form to i) display something, ii) choose an action via a 
+  | radio button -->
+<form method="get" action="faq.jsp" enctype=text/plain>
+    <!-- note the show.jsp will be invoked when the choice is made -->
+	<!-- The next lines give HTML for radio buttons being displayed -->
+	<br>
+	<b> Confused about what some of these values mean? See a key to these values by pressing the Submit button.  </b>
+  <input type="submit" value="Submit" />
+</form>
+<br>
+
  <!-- Show html form to i) display something, ii) choose an action via a 
   | radio button -->
 <form method="get" action="graphs.jsp" enctype=text/plain>
