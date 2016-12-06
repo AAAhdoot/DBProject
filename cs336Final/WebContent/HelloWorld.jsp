@@ -402,6 +402,20 @@ Select a category.
 	</form>
 <br>
 
+<b>Want to view all the average demographic, gun violence, or gun control data for states based on political affiliation? </b> Select the type of data you'd like to view.
+
+<br>
+
+<form method="query" action="PolAvg.jsp">
+		Select a category of information. <br>
+		<select name="table" size=1>
+			<option value="StateInfo">Demographic Data</option>
+			<option value="Murders">Gun Violence Data</option>
+			<option value="GunControlLaws">Gun Control Data</option>
+		</select>&nbsp;<input type="submit" value="submit">
+	</form>
+<br>
+
 
 <b>
 Want to see three pieces of information (one from each table) for all states at the same time? </b> Select the attributes below that you'd like to display.
