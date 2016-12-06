@@ -448,6 +448,7 @@ Select a category.
 			<option value="Unemployment_Rate">Unemployment Rate</option>
 			<option value="2016_Presidential_Election">Political Affiliation</option>
 			<option value="CCW_Type">Concealed Carry Permit Type</option>
+			<option value="Background_Checks">Background Checks</option>
 			<option value="Region">Region</option>
 			<option value="Division">Division</option>
 		</select>&nbsp;<br>
