@@ -10,7 +10,8 @@
 <script type="text/javascript€" src="€bootstrap/js/bootstrap.min.js"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>CS336 Final Project</title>
+
+<title>IllumiNation: Home</title>
 </head>
 <body BACKGROUND = "city.png">
 
@@ -29,12 +30,10 @@
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
 	<br>
-	<mark>About Us</mark>
+	<mark>Want to know more about us and the motivations behind this website?</mark>
   <input type="submit" value="Submit" />
 </form>
 
- 
-<br>
  <!-- Show html form to i) display something, ii) choose an action via a 
   | radio button -->
   
@@ -47,7 +46,7 @@
 </form>
 <br>
 
-Have fun playing around on our site! There are a bunch of powerful queries that you can run.
+Have fun playing around on our site! There is a lot of powerful information you can uncover.
 
 <br>
  <!-- Show html form to i) display something, ii) choose an action via a 
@@ -56,17 +55,17 @@ Have fun playing around on our site! There are a bunch of powerful queries that 
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
 	<br>
-	<mark>Want to see some cool things we found out when working with this data?</mark>
+	<mark>Want to see some interesting things we found out when working with this data?</mark>
   <input type="submit" value="Show me some cool findings." />
 </form>
-<br>
+
 <!-- Show html form to i) display something, ii) choose an action via a 
   | radio button -->
 <form method="get" action="faq.jsp" enctype=text/plain>
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
 	<br>
-	<mark> Confused about what some of these values mean?</mark> See a key to these values by pressing the Submit button.  </b>
+	<mark> Confused about what some of your results mean?</mark> See a key to these values by pressing the Submit button.  </b>
   <input type="submit" value="Submit" />
 </form>
 <br>
@@ -76,7 +75,6 @@ Have fun playing around on our site! There are a bunch of powerful queries that 
 <form method="get" action="graphs.jsp" enctype=text/plain>
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
-	<br>
 	<b>Want to see some cool graphs?</b>
   <input type="submit" value="Show me some cool graphs." />
 </form>
@@ -88,23 +86,22 @@ Have fun playing around on our site! There are a bunch of powerful queries that 
 <form method="get" action="show.jsp" enctype=text/plain>
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
-  <input type="radio" name="command" value="StateInfo"/> Let's look at demographic data by state.
+  <input type="radio" name="command" value="StateInfo"/> Let's explore demographic data for all states within the United States.
   <br>
-  <input type="radio" name="command" value="Murders"/> Let's look at gun violence by state.
+  <input type="radio" name="command" value="Murders"/> Let's check out some data surrounding gun violence for all states.
     <!-- when the radio for bars is chosen, then 'command' will have value 
      | 'bars', in the show.jsp file, when you access request.parameters -->
   <br>
-  <input type="radio" name="command" value="GunControlLaws"/> Let's look at gun control laws by state.
+  <input type="radio" name="command" value="GunControlLaws"/> Let's explore gun control data for all states.
   <br>
   <input type="submit" value="submit" />
 </form>
-<br>
 
 <form method="get" action="morespecific.jsp" enctype=text/plain>
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
 	<br>
-	<b>Want to see more specific data?</b>
+	<b>Thinking about moving to a new state, or traveling temporarily? Even if you don't know where you want to move, you can use our website to see more specific data about states, gun control, and gun violence.</b>
   <input type="submit" value="Show me more specific data." />
 </form>
 <br>

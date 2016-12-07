@@ -25,14 +25,15 @@
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
 	<br>
-	<mark>Want to see information about average values?</mark>
+	<mark>Want to see how your state's values match up against average values for all states?</mark>
   <input type="submit" value="Yes!" />
 </form>
 <br>
 
 <hr>
 
-<b>Want to view all the demographic, gun violence, or gun control data for a given state? </b> Select your state below and the type of data you'd like to view.
+<b> Want to see all the demographic data, gun violence data, or gun control data for a given state?</b><br>
+Select the state you live in, or that you're planning on moving to, to see information that could impact your decision.
 
 <br>
 
@@ -99,7 +100,9 @@ Select a state. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Select a 
 	</form>
 <br>
 
-<b> See selected information for a particular state. </b> Select a state and between 1 and 3 attributes to display.<br>
+<b> Already know what particular types of information you want to know about your state? </b>
+<br>
+See selected information for a particular state. Select a state and between 1-3 attributes to display.<br>
 
 &nbsp;&nbsp;&nbsp;Select a state.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demographic Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Murder Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gun Control Data<br>
 <form method="query" action="onestate.jsp">
@@ -186,13 +189,16 @@ Select a state. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Select a 
 			<option value="Grade">Grade</option> 
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
 			<option value="Background_Checks">Background Checks</option>
+			<option value="CCW_Type">Concealed Carry</option>
 		</select>&nbsp;
 		 <input type="submit" value="submit">
 		
 	</form>
 <br>
 
-Show me all the states that either do or do not require background checks to purchase guns.</b>
+<b> Want to move to a state that requires background checks to purchase a gun? </b> Or, on the flip side, want to move to a state that requires background checks to purchase guns?
+<br>
+Use the drop-down below to select states that do or do not require background checks to purchase guns.
 <br>
 	<form method="query" action="backgroundcheck.jsp">
 		<select name="Checker" size=1>
@@ -202,7 +208,9 @@ Show me all the states that either do or do not require background checks to pur
 	</form>
 <br>
 
-<b>Let's query the states by grade. </b> (Note: The grades listed below are the only grades that states have received in the past year.)
+<b>Want to see which states have received a passing grade for their gun control laws?</b>
+<br>
+Note: The grades listed below are the only grades that states have received in the past year.
 
 <br>
 	<form method="query" action="query.jsp">
@@ -221,7 +229,11 @@ Show me all the states that either do or do not require background checks to pur
 <br>
 
 <b>
-Want to see three pieces of information (one from each table) for all states at the same time? </b> Select between 1 and 3 attributes to display.
+Want to see how your state stacks up against all other states?</b>
+<br>
+Use this section to view three pieces of information (one from each table) for all states within the United States at the same time.<br>
+
+Select between 1 and 3 attributes to display.
 <br>
 
 	<form method="query" action="triquery.jsp">
@@ -256,53 +268,16 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Grade">Grade</option> 
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
 			<option value="Background_Checks">Background Checks</option>
+			<option value="CCW_Type">Concealed Carry</option>
 		</select>&nbsp;
 		<input type="submit" value="submit">
 	</form>
 <br>
 
-<b>
-Want to see three pieces of information (one from each table) for all states at the same time? </b> Select between 1 and 3 attributes to display.
+<b> Want to see how the state you're planning on moving to stacks up against the state you currently live in? </b>
 <br>
-
-	<form method="query" action="triquery.jsp">
-	&nbsp;&nbsp;Demographic Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Murder Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gun Control Data<br>
-		<select name="StateInfo" size=1>
-		    <option value=""></option>
-			<option value="Population">Population</option>
-			<option value="Gun_Ownership">Gun Ownership</option>
-			<option value="Income_Level">Income Level</option>
-			<option value="Poverty_Level">Poverty Level</option>
-			<option value="Unemployment_Rate">Unemployment Rate</option>
-			<option value="Mental_Health_Access">Mental Health Access</option>
-			<option value="2016_Presidential_Election">2016 Presidential Election</option>
-			<option value="Governor">Governor</option>
-		</select>&nbsp;
-		
-		<select name="Murders" size=1>
-			<option value=""></option>
-			<option value="Total_murders">Total Murders</option>
-			<option value="Gun_murders">Gun Murders</option>
-			<option value="Handguns">Handgun Murders</option>
-			<option value="Rifles">Rifle Murders</option>
-			<option value="Shotguns">Shotgun Murders</option>
-			<option value="Firearms">Firearm Murders</option>
-			<option value="Murders_per_capita">Murders Per Capita</option>
-			<option value="Gun_murders_per_capita">Gun Murders Per Capita</option>
-		</select>&nbsp;
-		
-		<select name="GunControlLaws" size=1>
-			<option value=""></option>
-			<option value="Gun_Law_Rank">Gun Law Rank</option>
-			<option value="Grade">Grade</option> 
-			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
-			<option value="Background_Checks">Background Checks</option>
-		</select>&nbsp;
-		<input type="submit" value="submit">
-	</form>
-<br>
-
-<b>Select two states below to compare them across multiple attributes. </b> From the three drop-downs following your selected states, choose up to three attributes (one from each table) against which you wish to compare your two states.
+Select two states below to compare them across multiple attributes. 
+<br> From the three drop-downs following your selected states, choose up to three attributes (one from each table) against which you wish to compare your two states.
 <br>
 	<form method="query" action="statecompare.jsp">
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First state &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second state &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demographics &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Murders &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gun Control<br>
@@ -440,13 +415,16 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Grade">Grade</option> 
 			<option value="Gun_Death_Rate_Rank">Gun Death Rate Rank</option>
 			<option value="Background_Checks">Background Checks</option>
+			<option value="CCW_Type">Concealed Carry</option>
 		</select>&nbsp;
 	 <input type="submit" value="submit">
 	</form>
 <br>
 
 
-<b> Want to see state-based (demographic) data based on a state's political affiliation? </b> Like abortion access, mental health access, poverty level, etc.
+<b> Affiliated with a political party? </b>
+<br>
+You can use this next section to explore state-based demographic data based on a state's political affiliation.<br>
 Select from below whether you'd like to (1) explore by how the state voted in the 2016 Presidential Election or (2) the state's governor, and what political party you'd like to search.
 
 <br>
