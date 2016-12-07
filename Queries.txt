@@ -1,0 +1,63 @@
+Ariel Ahdoot and Ashni Mehta
+CS336 Final Project
+
+Types of Queries
+
+1) SELECT * FROM __name of table__
+
+Example: SELECT * FROM StateInfo
+
+2) SELECT State, __name of attribute__ FROM __name of table__ ORDER BY (__name of attribute__) ___ASC or DESC___ LIMIT ___number limit__
+
+Example: SELECT State, Population FROM StateInfo ORDER BY (Population) ASC LIMIT 5;
+
+3) SELECT State, __name of attribute__ FROM __name of table__ WHERE __name of attribute__ = (SELECT __MIN or MAX__ (__name of attribute__) FROM __ name of table)
+
+Example: SELECT State,Population FROM StateInfo WHERE Population= (SELECT MIN(Population) FROM StateInfo);
+
+4)SELECT * FROM __name of table__ WHERE State = '__name of state__';
+
+Example: SELECT * FROM StateInfo WHERE State= 'Alabama';
+
+5) SELECT __first attribute__, __second attribute__, __third attribute__ FROM GunControlLaws,StateInfo,Murders WHERE StateInfo.State = "__name of state__" AND Murders.State = "__name of state__" AND GunControlLaws.State = "__name of state__";
+
+Example: SELECT StateInfo.Gun_Ownership,Murders.Rifles,GunControlLaws.Grade FROM GunControlLaws, StateInfo, Murders WHERE StateInfo.State = "Alabama" AND Murders.State = "Alabama" AND GunControlLaws.State = "Alabama";
+
+6)SELECT * FROM GunControlLaws WHERE Background_Checks = 'no';
+SELECT * FROM GunControlLaws WHERE Background_Checks = 'yes';
+
+7)SELECT * FROM GunControlLaws WHERE Grade = '__grade__'
+
+SELECT * FROM GunControlLaws WHERE Grade = 'A-'
+
+8)SELECT StateInfo.State, __first attribute__, __second attribute__, __third attribute__ FROM GunControlLaws,StateInfo,Murders WHERE StateInfo.State = Murders.State AND Murders.State = GunControlLaws.State
+
+Example:SELECT StateInfo.state,StateInfo.Gun_Ownership,Murders.Handguns,GunControlLaws.Gun_Death_Rate_Rank FROM GunControlLaws, StateInfo, Murders WHERE StateInfo.State= Murders.State and Murders.State = GunControlLaws.State;
+
+9) SELECT StateInfo.State, __first attribute__, __second attribute__, __third attribute__ FROM GunControlLaws, StateInfo, Murders WHERE StateInfo.State= Murders.State and Murders.State = GunControlLaws.State and (GunControlLaws.State = '__first state__' or GunControlLaws.State = '__second state__');
+
+Example: SELECT StateInfo.State,StateInfo.Income_Level,Murders.Handguns,GunControlLaws.Grade FROM GunControlLaws, StateInfo, Murders WHERE StateInfo.State= Murders.State and Murders.State = GunControlLaws.State and (GunControlLaws.State = 'Alabama' or GunControlLaws.State = 'New Mexico');
+
+10) SELECT * FROM StateInfo WHERE 2016_Presidential_Election = "Republican";
+	SELECT * FROM StateInfo WHERE 2016_Presidential_Election = "Democrat";
+
+11) SELECT AVG(__first attribute__), AVG(__second attribute__) FROM __first table__, __second table__
+Example: SELECT AVG(StateInfo.Gun_Ownership), AVG(Murders.Rifles) FROM StateInfo, Murders;
+
+11) SELECT __Region or Division__, AVG(__first attribute of table__), AVG(__second attribute of table__), ......., AVG(__last attribute of table__) FROM StateInfo, __other table if necessary__ GROUP BY(__Region or Division__)
+
+Example:SELECT Region, AVG(Population), AVG(Gun_Ownership), AVG(Income_Level), AVG(Poverty_Level), AVG(Unemployment_Rate), AVG(Mental_Health_Access), AVG(Percent_No_Abortion_Provider) FROM StateInfo GROUP BY(Region);
+
+12) SELECT AVG(__first attribute of table__), AVG(__second attribute of table__), ......., AVG(__last attribute of table__) FROM StateInfo GROUP BY(2016_Presidential_Election)
+
+Example: SELECT 2016_Presidential_Election, AVG(Population), AVG(Gun_Ownership), AVG(Income_Level), AVG(Poverty_Level), AVG(Unemployment_Rate), AVG(Mental_Health_Access), AVG(Percent_No_Abortion_Provider) FROM StateInfo GROUP BY(2016_Presidential_Election);
+
+13) SELECT AVG(__first attribute of table__), AVG(__second attribute of table__), ......., AVG(__last attribute of table__) FROM FROM StateInfo, Murders, GunControlLaws WHERE StateInfo.State = Murders.State AND Murders.State = GunControlLaws.State AND __chosen attribute__ =/</>/<=/>= __provided value__
+
+Example 1:SELECT AVG(Population), AVG(Gun_Ownership), AVG(Income_Level), AVG(Poverty_Level), AVG(Unemployment_Rate), AVG(Mental_Health_Access), AVG(Percent_No_Abortion_Provider) FROM StateInfo, Murders, GunControlLaws WHERE StateInfo.State = Murders.State AND Murders.State = GunControlLaws.State AND StateInfo.Mental_Health_Access <= 13 AND Mental_Health_Access>=1
+
+Example 2:SELECT AVG(Population), AVG(Gun_Ownership), AVG(Income_Level), AVG(Poverty_Level), AVG(Unemployment_Rate), AVG(Mental_Health_Access), AVG(Percent_No_Abortion_Provider) FROM StateInfo, Murders, GunControlLaws WHERE StateInfo.State = Murders.State AND Murders.State = GunControlLaws.State AND StateInfo.Unemployment_Rate <= 4.4 AND Unemployment_Rate>=2.5;
+
+Example 3:SELECT 2016_Presidential_Election, AVG(Population), AVG(Gun_Ownership), AVG(Income_Level), AVG(Poverty_Level), AVG(Unemployment_Rate), AVG(Mental_Health_Access), AVG(Percent_No_Abortion_Provider) FROM StateInfo, Murders, GunControlLaws WHERE StateInfo.State = Murders.State AND Murders.State = GunControlLaws.State GROUP BY(2016_Presidential_Election);
+
+Example 4:SELECT AVG(Population), AVG(Gun_Ownership), AVG(Income_Level), AVG(Poverty_Level), AVG(Unemployment_Rate), AVG(Mental_Health_Access), AVG(Percent_No_Abortion_Provider) FROM StateInfo, Murders, GunControlLaws WHERE StateInfo.State = Murders.State AND Murders.State = GunControlLaws.State AND GunControlLaws.CCW_Type = 'May Issue';
