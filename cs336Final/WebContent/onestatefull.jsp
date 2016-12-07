@@ -34,8 +34,7 @@
 			//Run the query against the database.
 
 			
-			ResultSet result = stmt.executeQuery(str);
-
+			ResultSet result = stmt.executeQuery(str);			
 			
 			//Make an HTML table to show the results in:
 			out.print("<table BORDER>");

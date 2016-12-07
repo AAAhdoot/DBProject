@@ -65,7 +65,7 @@
 				return;
 			}
 			
-			String str = "SELECT StateInfo.state," + entity1 + entity2 + entity3 + " FROM GunControlLaws, StateInfo, Murders  WHERE StateInfo.State= Murders.State and Murders.State = GunControlLaws.State;";
+			String str = "SELECT StateInfo.State," + entity1 + entity2 + entity3 + " FROM GunControlLaws, StateInfo, Murders  WHERE StateInfo.State= Murders.State and Murders.State = GunControlLaws.State;";
 			
 			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
 			
@@ -73,8 +73,6 @@
 			
 			
 			ResultSet result = stmt.executeQuery(str);
-
-			
 			
 			//Make an HTML table to show the results in:
 			out.print("<table BORDER>");

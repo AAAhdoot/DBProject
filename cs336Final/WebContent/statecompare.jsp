@@ -69,13 +69,11 @@
 			}
 			
 			
-			String str = "SELECT StateInfo.state," + entity1 + entity2 + entity3 + " FROM GunControlLaws, StateInfo, Murders  WHERE StateInfo.State= Murders.State and Murders.State = GunControlLaws.State and (GunControlLaws.State = " + "\'" + param4 + "\'" + " or GunControlLaws.State = " + "\'" + param5 + "\'"+ ");";
+			String str = "SELECT StateInfo.State," + entity1 + entity2 + entity3 + " FROM GunControlLaws, StateInfo, Murders  WHERE StateInfo.State= Murders.State and Murders.State = GunControlLaws.State and (GunControlLaws.State = " + "\'" + param4 + "\'" + " or GunControlLaws.State = " + "\'" + param5 + "\'"+ ");";
 			
 			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
 			
-			//Run the query against the database.
-			
-			
+			//Run the query against the database.			
 			ResultSet result = stmt.executeQuery(str);
 
 			

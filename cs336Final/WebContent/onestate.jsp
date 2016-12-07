@@ -67,7 +67,6 @@
 			}
 			
 			String str = "SELECT " + entity1 + entity2 + entity3 + " FROM GunControlLaws, StateInfo, Murders  WHERE StateInfo.State = \""  + paramState + "\" AND Murders.State = \""  + paramState + "\" AND GunControlLaws.State = \""  + paramState + "\";";
-			//out.print(str);
 			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
 			
 			//Run the query against the database.

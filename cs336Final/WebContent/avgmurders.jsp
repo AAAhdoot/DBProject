@@ -59,7 +59,7 @@
 			}
 			
 			String str = "SELECT" + entity1 + entity2 + " FROM StateInfo, Murders;";
-			
+						
 			ResultSet result = stmt.executeQuery(str);
 			
 			//Make an HTML table to show the results in:

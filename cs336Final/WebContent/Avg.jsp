@@ -152,9 +152,7 @@
 
 			
 			ResultSet result = stmt.executeQuery(str);
-			
-			out.print(str);
-			
+						
 			//parse out the results
 			while (result.next()) {
 				//make a row
@@ -284,9 +282,7 @@
 					str = "SELECT " + table_result + finale + "AND" + "  StateInfo.Poverty_Level <= 12 AND Poverty_Level>=9;";
 					str2 = "SELECT " + table_result + finale + "AND" +  "  StateInfo.Poverty_Level <= 17 AND Poverty_Level>=13;";
 					str3 = "SELECT " + table_result + finale + "AND" +  "  StateInfo.Poverty_Level <= 22 AND Poverty_Level>=18;";	
-					
-				out.print(str);
-					
+										
 			ResultSet result = stmt.executeQuery(str);
 			while (result.next()) {
 				//make a row
@@ -411,7 +407,6 @@
 
 				}
 				//Run the query against the database.
-				out.print(table);
 				
 				ResultSet result = stmt.executeQuery(str);
 				
@@ -703,8 +698,6 @@
 					str2 = "SELECT " + table_result + finale + " AND GunControlLaws.CCW_Type = " + "\'" + "Limited Discretion" + "\'" + ";";
 					str3 = "SELECT " + table_result + finale + " AND GunControlLaws.CCW_Type = " + "\'" + "No Discretion" + "\'" + ";";	
 					str4 = "SELECT " + table_result + finale + " AND GunControlLaws.CCW_Type = " + "\'" + "None" + "\'" + ";";
-
-			out.print(table);
 					
 					
 			ResultSet result = stmt.executeQuery(str);
@@ -836,8 +829,6 @@
 				str2 = "SELECT " + table_result + finale + "AND" +  "  StateInfo.Unemployment_Rate <= 5.5 AND Unemployment_Rate>=4.6;";
 				str3 = "SELECT " + table_result + finale + "AND" +  "  StateInfo.Unemployment_Rate <= 7 AND Unemployment_Rate>=5.6;";	
 				
-			out.print(str);
-				
 		ResultSet result = stmt.executeQuery(str);
 		while (result.next()) {
 			//make a row
@@ -959,9 +950,7 @@ else if(attribute.equals("Gun_Ownership")){
 				str = "SELECT " + table_result + finale + "AND" + "  StateInfo.Gun_Ownership <= 25 AND Gun_Ownership>=5;";
 				str2 = "SELECT " + table_result + finale + "AND" +  "  StateInfo.Gun_Ownership <= 40 AND Gun_Ownership>=26;";
 				str3 = "SELECT " + table_result + finale + "AND" +  "  StateInfo.Ownership <= 62 AND Ownership>=41;";	
-				
-			out.print(str);
-				
+								
 		ResultSet result = stmt.executeQuery(str);
 		while (result.next()) {
 			//make a row
@@ -1084,9 +1073,7 @@ else if(attribute.equals("Percent_No_Abortion_Provider")){
 	str2 = "SELECT " + table_result + finale + "AND" + "  StateInfo.Percent_No_Abortion_Provider <= 50 AND Percent_No_Abortion_Provider>=26;";
 	str3 = "SELECT " + table_result + finale + "AND" + "  StateInfo.Percent_No_Abortion_Provider <= 75 AND Percent_No_Abortion_Provider>=51;";
 	str4 = "SELECT " + table_result + finale + "AND" + "  StateInfo.Percent_No_Abortion_Provider <= 100 AND Percent_No_Abortion_Provider>=76;";
-	
-out.print(table);
-	
+		
 	
 ResultSet result = stmt.executeQuery(str);
 while (result.next()) {
@@ -1219,9 +1206,7 @@ if(!result.next()){
 
 		
 		ResultSet result = stmt.executeQuery(str);
-		
-		out.print(str);
-		
+				
 		//parse out the results
 		while (result.next()) {
 			//make a row
@@ -1351,9 +1336,7 @@ if(!result.next()){
 
 	
 	ResultSet result = stmt.executeQuery(str);
-	
-	out.print(str);
-	
+		
 	//parse out the results
 	while (result.next()) {
 		//make a row

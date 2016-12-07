@@ -47,7 +47,7 @@
 			//Make a SELECT query from the sells table with the price range specified by the 'price' parameter at the HelloWorld.jsp
 						
 			//Run the query against the database.
-			
+						
 			ResultSet result = stmt.executeQuery(str);
 
 			

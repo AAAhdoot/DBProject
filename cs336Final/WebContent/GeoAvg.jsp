@@ -54,9 +54,7 @@
 				str = "SELECT Division, " + table_result + " FROM " + table + equals + " GROUP BY(Division);";
 			}
 			
-			//Run the query against the database.
-
-			
+			//Run the query against the database.			
 			ResultSet result = stmt.executeQuery(str);
 
 			
