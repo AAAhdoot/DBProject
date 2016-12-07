@@ -13,6 +13,18 @@
 </head>
 <body BACKGROUND = "city.png">
 
+<br>
+ <!-- Show html form to i) display something, ii) choose an action via a 
+  | radio button -->
+<form method="get" action="averageview.jsp" enctype=text/plain>
+    <!-- note the show.jsp will be invoked when the choice is made -->
+	<!-- The next lines give HTML for radio buttons being displayed -->
+	<br>
+	<b>Want to see information about average values?</b>
+  <input type="submit" value="Yes!" />
+</form>
+<br>
+
 <b>Want to view all the demographic, gun violence, or gun control data for a given state? </b> Select your state below and the type of data you'd like to view.
 
 <br>
