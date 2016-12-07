@@ -9,12 +9,19 @@
 <link href=”bootstrap/css/bootstrap.min.css” rel=”stylesheet” type=”text/css” />
 <script type=”text/javascript” src=”bootstrap/js/bootstrap.min.js”></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>CS336 Final Project</title>
+<title>IllumiNation: Averages and Extremes</title>
 </head>
 <body BACKGROUND = "city.png">
+<b><font color = "navy"><font size = "+8">Averages and Extremes</font></font></b><br>
+<hr>
+
+<b><font color = "navy">Use this section to explore average values across all states.</font></b>
+<hr>
 
 <b>
-Want to play around with some averages? </b> Select a value from the first drop-down or a value from the second drop-down (or both) and we'll calculate
+Want to see average values for certain attributes across all states? </b> 
+<br>
+Select a value from the first drop-down or a value from the second drop-down (or both) and we'll calculate
 the average value for each attribute across all states.
 <br>
 	<form method="query" action="avgmurders.jsp">
@@ -42,7 +49,11 @@ the average value for each attribute across all states.
 	</form>
 <br>
 
-<b>Want to view all the average demographic, gun violence, or gun control data for a given group of states? </b> Select your category below and the type of data you'd like to view.
+<b>Want to view all the average demographic, gun violence, or gun control data for the United States for a given region or division? </b> 
+<br>
+Use this tool to see how your region or division stacks up against the rest.<br>
+
+Select whether you'd like to group your states by region (Northeast, West, South, Midwest), or division (East North Central, East South Central, Middle Atlantic, Mountain, New England, Pacific, South Atlantic, West North Central, West South Central).
 
 <br>
 
@@ -61,7 +72,7 @@ Select a category.
 	</form>
 <br>
 
-<b>Want to view all the average demographic, gun violence, or gun control data for states based on political affiliation? </b> 
+<b> Want to see average demographic, gun violence, or gun control data for your political party?</b> 
 
 <br>
 
@@ -75,7 +86,7 @@ Select a category.
 	</form>
 <br>
 
-<b>You get an average! You get an average! We all get averages!</b>
+<b>Want to see how the entire United States averages?</b>
 
 <form method="query" action="Avg.jsp">
 		Select the attribute you'd like to view followed by the type of data. <br>
@@ -100,10 +111,14 @@ Select a category.
 		<input type="submit" value="submit">
 	</form>
 <br>
+<hr>
 
+<b><font color = "navy">Use this section to explore minimum and maximum values within the United States.</font></b>
 <hr>
 <b>
-Show me the top X states with the highest values for a given attribute. </b>
+Not sure where you want to move but know what's most important to you?<br>
+Use this tool to find the top X states with the highest values for a given attribute. </b>
+<br>
 Select the attribute you'd like to explore further from the first column. Choose whether you'd like to sort your results in ascending or descending order, then limit the number of results you're shown using the third drop-down.
 <br>
 
@@ -149,10 +164,12 @@ Select the attribute you'd like to explore further from the first column. Choose
 <br>
 
 <b>
-Want to see the lowest or highest value for a particular attribute? </b> Ex: the lowest unemployment rate, the highest number of murders by gun in a state, the largest population.
+Know what you'd like to avoid or absolutely have in the state you move to? <br>
+Use this tool to see the lowest or highest value for a particular attribute. </b> 
+<br> Ex: the lowest unemployment rate, the highest number of murders by gun in a state, the largest population.
+<br>
 Select an attribute from the first drop-down and whether you'd like to view the minimum or maximum value for that attribute from the second column.
 
-<br>
 	<form method="query" action="minmax.jsp">
 	Select an attribute. <br>
 			<select name="Attribute" size=1>
