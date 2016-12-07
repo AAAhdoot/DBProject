@@ -23,7 +23,9 @@ Income Rank - How the state compares against other states for average income. Th
 <br>Murders by Rifle - The number of murders by rifle that occurred in that state.
 <br>Murders by Shotgun - The number of murders by shotgun that occurred in that state.
 <br>Murders by Firearm - The number of murders by firearm that occurred in that state.
-<br>
+<br>Murders Per Capita - The number of murders that occurred in that state per 100,000 people.
+<br>Gun Murders Per Capita - The number of gun murders that occurred in that state per 100,000 people.
+
 <br><b>Table 3: Gun Control Laws</b>
 
 <br>
