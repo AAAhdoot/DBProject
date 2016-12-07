@@ -6,9 +6,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link href=”bootstrap/css/bootstrap.min.css” rel=”stylesheet” type=”text/css” />
-<script type=”text/javascript” src=”bootstrap/js/bootstrap.min.js”></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
 <title>More Specific Data</title>
 </head>
 <body BACKGROUND = "city.png">
@@ -442,6 +442,26 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Background_Checks">Background Checks</option>
 		</select>&nbsp;
 	 <input type="submit" value="submit">
+	</form>
+<br>
+
+
+<b> Want to see state-based (demographic) data based on a state's political affiliation? </b> Like abortion access, mental health access, poverty level, etc.
+Select from below whether you'd like to (1) explore by how the state voted in the 2016 Presidential Election or (2) the state's governor, and what political party you'd like to search.
+
+<br>
+	<form method="query" action="politicalexplore.jsp">
+		<select name="PoliticalChoice" size=1>
+		Choose between the 2016 Presidential Election and the state's governor.<br>
+			<option value="2016_Presidential_Election">2016 Presidential Election</option>
+			<option value="Governor">Governor</option>
+		</select>&nbsp;<p>
+		Choose a political party. <br>
+		<select name="Party" size=1>
+			<option value="Republican">Republican</option>
+			<option value="Democratic">Democrat</option>
+		</select>&nbsp;
+		<input type="submit" value="submit"> <br>
 	</form>
 <br>
 </body>

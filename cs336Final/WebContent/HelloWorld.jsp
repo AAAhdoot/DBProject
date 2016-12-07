@@ -6,26 +6,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link href=â€bootstrap/css/bootstrap.min.cssâ€ rel=â€stylesheetâ€ type=â€text/cssâ€ />
-<script type=â€text/javascriptâ€ src=â€bootstrap/js/bootstrap.min.jsâ€></script>
+<link href="€bootstrap/css/bootstrap.min.css" rel="stylesheet"€ type="text/css" />
+<script type="text/javascript€" src="€bootstrap/js/bootstrap.min.js"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>CS336 Final Project</title>
 </head>
 <body BACKGROUND = "city.png">
 
-<b><font color = "blue"><font size = "+10">Welcome to our final project for CS336 - Databases (Fall 2016).</font></b></font>
+<b><font color = "navy"><font size = "+8">IllumiNation</font></font></b>
+<br>
+<b><font color = "navy">Shedding light on the dark side of gun violence in the United States. </font></b>
 
-<hr>
+<br>
+ <!-- Show html form to i) display something, ii) choose an action via a 
+  | radio button -->
+ 
+<hr> 
+ 
+ 
+<form method="get" action="about.jsp" enctype=text/plain>
+    <!-- note the show.jsp will be invoked when the choice is made -->
+	<!-- The next lines give HTML for radio buttons being displayed -->
+	<br>
+	<mark>About Us</mark>
+  <input type="submit" value="Submit" />
+</form>
 
-<br>
-We thought it'd be interesting to explore <b>incidences of gun violence</b> across the nation, and link in some data that isn't usually included when discussing gun violence.
-We collected a lot of data, some more interesting than others: how strict a state's gun laws are, the <b>average unemployment rate</b> in a state, abortion availability,
-the state's <b>political leanings</b>, incidences of gun violence (separated by type of gun), and more.
-<br>
-<br>
-<mark> Note: Data surrounding murders by different types of guns was not available for Florida.</mark> Our data comes from the FBI's Crime in the United States Report, which relies on data 
-that is submitted through the Uniform Crime Reporting (UCR) Program. In multiple years (including the most recent one), the supplemental homicide data submitted by the Florida state UCR Program
-did not meet UCR guidelines and was not included in the FBI table (Table 20 of the Crime in the US index). 
  
 <br>
  <!-- Show html form to i) display something, ii) choose an action via a 
@@ -181,25 +188,6 @@ Select an attribute from the first drop-down and whether you'd like to view the 
 			<option value="MAX">Largest</option>
 		</select>&nbsp;<br>
 <input type="submit" value="submit">
-	</form>
-<br>
-<b>
-
-<b> Want to see state-based (demographic) data based on a state's political affiliation? </b> Like abortion access, mental health access, poverty level, etc.
-Select from below whether you'd like to (1) explore by how the state voted in the 2016 Presidential Election or (2) the state's governor, and what political party you'd like to search.
-<br>
-	<form method="query" action="politicalexplore.jsp">
-		<select name="PoliticalChoice" size=1>
-		Choose between the 2016 Presidential Election and the state's governor.<br>
-			<option value="2016_Presidential_Election">2016 Presidential Election</option>
-			<option value="Governor">Governor</option>
-		</select>&nbsp;<p>
-		Choose a political party. <br>
-		<select name="Party" size=1>
-			<option value="Republican">Republican</option>
-			<option value="Democratic">Democrat</option>
-		</select>&nbsp;
-		<input type="submit" value="submit"> <br>
 	</form>
 <br>
 </body>
