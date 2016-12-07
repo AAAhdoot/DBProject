@@ -91,7 +91,7 @@ Have fun playing around on our site! There are a bunch of powerful queries that 
 
 <br>
 
-Select a state.
+Select a state. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Select a category.
 <form method="query" action="onestatefull.jsp">
 		<select name="state" size=1>
 			<option value="Alabama">Alabama</option>
@@ -145,8 +145,7 @@ Select a state.
 			<option value="West Virginia">West Virginia</option>
 			<option value="Wisconsin">Wisconsin</option>
 			<option value="Wyoming">Wyoming</option>
-		</select>&nbsp;<p>
-		Select a category of information. <br>
+		</select>&nbsp;
 		<select name="table" size=1>
 			<option value="StateInfo">Demographic Data</option>
 			<option value="Murders">Gun Violence Data</option>
@@ -155,9 +154,9 @@ Select a state.
 	</form>
 <br>
 
-<b> See selected information for a particular state. </b> Choose up to three different attributes (one from Demographic Data, one from Gun Violence, and one from Gun Control Laws) for your state.<br>
+<b> See selected information for a particular state. </b> Select a state and between 1 and 3 attributes to display.<br>
 
-Select a state. 
+&nbsp;&nbsp;&nbsp;Select a state.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demographic Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Murder Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gun Control Data<br>
 <form method="query" action="onestate.jsp">
 		<select name="State" size=1>
 			<option value="Alabama">Alabama</option>
@@ -211,8 +210,8 @@ Select a state.
 			<option value="West Virginia">West Virginia</option>
 			<option value="Wisconsin">Wisconsin</option>
 			<option value="Wyoming">Wyoming</option>
-		</select>&nbsp; <p>
-		Would you like to add an attribute related to demographic data? If not, leave this drop-down blank.<br>
+		</select>&nbsp; 
+
 		<select name="StateInfo" size=1>
 		    <option value=""></option>
 			<option value="Population">Population</option>
@@ -223,8 +222,8 @@ Select a state.
 			<option value="Mental_Health_Access">Mental Health Access</option>
 			<option value="2016_Presidential_Election">2016 Presidential Election</option>
 			<option value="Governor">Governor</option>
-		</select>&nbsp; <p>
-		Would you like to add an attribute related to gun violence? If not, leave this drop-down blank.<br>
+		</select>&nbsp; 
+
 		<select name="Murders" size=1>
 			<option value=""></option>
 			<option value="Total_murders">Total Murders</option>
@@ -235,8 +234,7 @@ Select a state.
 			<option value="Firearms">Firearm Murders</option>
 			<option value="Murders_per_capita">Murders Per Capita</option>
 			<option value="Gun_murders_per_capita">Gun Murders Per Capita</option>
-		</select>&nbsp;<p>
-		Would you like to add an attribute related to gun control laws? If not, leave this drop-down blank.<br>
+		</select>&nbsp;
 		<select name="GunControlLaws" size=1>
 			<option value=""></option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
@@ -438,7 +436,7 @@ Select a category.
 <b>You get an average! You get an average! We all get averages!</b>
 
 <form method="query" action="Avg.jsp">
-		Select the type of data you'd like to view. <br>
+		Select the attribute you'd like to view followed by the type of data. <br>
 			<select name="attribute" size=1>
 			<option value="Mental_Health_Access">Mental Health Access</option>
 			<option value="Poverty_Level">Poverty Level</option>
@@ -451,22 +449,23 @@ Select a category.
 			<option value="Background_Checks">Background Checks</option>
 			<option value="Region">Region</option>
 			<option value="Division">Division</option>
-		</select>&nbsp;<br>
+		</select>&nbsp;
 		<select name="table" size=1>
 			<option value="StateInfo">Demographic Data</option>
 			<option value="Murders">Gun Violence Data</option>
 			<option value="GunControlLaws">Gun Control Data</option>
-		</select>&nbsp;<br>
+		</select>&nbsp;
 		<input type="submit" value="submit">
 	</form>
 <br>
 
 <b>
-Want to see three pieces of information (one from each table) for all states at the same time? </b> Select the attributes below that you'd like to display.
+Want to see three pieces of information (one from each table) for all states at the same time? </b> Select between 1 and 3 attributes to display.
 <br>
+
 	<form method="query" action="triquery.jsp">
+	&nbsp;&nbsp;Demographic Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Murder Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gun Control Data<br>
 		<select name="StateInfo" size=1>
-		Choose an attribute related to demographic data, or leave this drop-down blank. <br>
 		    <option value=""></option>
 			<option value="Population">Population</option>
 			<option value="Gun_Ownership">Gun Ownership</option>
@@ -476,8 +475,8 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Mental_Health_Access">Mental Health Access</option>
 			<option value="2016_Presidential_Election">2016 Presidential Election</option>
 			<option value="Governor">Governor</option>
-		</select>&nbsp;<p>
-		Choose a value from this drop-down, or leave it blank. <br>
+		</select>&nbsp;
+		
 		<select name="Murders" size=1>
 			<option value=""></option>
 			<option value="Total_murders">Total Murders</option>
@@ -488,8 +487,8 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Firearms">Firearm Murders</option>
 			<option value="Murders_per_capita">Murders Per Capita</option>
 			<option value="Gun_murders_per_capita">Gun Murders Per Capita</option>
-		</select>&nbsp;<p>
-		Choose a value from this drop-down, or leave it blank. <br>
+		</select>&nbsp;
+		
 		<select name="GunControlLaws" size=1>
 			<option value=""></option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
@@ -504,7 +503,7 @@ Want to see three pieces of information (one from each table) for all states at 
 <b>Select two states below to compare them across multiple attributes. </b> From the three drop-downs following your selected states, choose up to three attributes (one from each table) against which you wish to compare your two states.
 <br>
 	<form method="query" action="statecompare.jsp">
-		Choose your first state. <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First state &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second state &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demographics &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Murders &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gun Control<br>
 		<select name="State1" size=1>
 			<option value="Alabama">Alabama</option>
 			<option value="Alaska">Alaska</option>
@@ -557,8 +556,7 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="West Virginia">West Virginia</option>
 			<option value="Wisconsin">Wisconsin</option>
 			<option value="Wyoming">Wyoming</option>
-		</select>&nbsp;<p>
-		Select a second state. <br>
+		</select>&nbsp;
 		<select name="State2" size=1>
 			<option value="Alabama">Alabama</option>
 			<option value="Alaska">Alaska</option>
@@ -611,8 +609,7 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="West Virginia">West Virginia</option>
 			<option value="Wisconsin">Wisconsin</option>
 			<option value="Wyoming">Wyoming</option>
-		</select>&nbsp;<p>
-		Select a demographic-related attribute, or leave this column blank. <br>
+		</select>&nbsp;
 		<select name="StateInfo" size=1>
 		    <option value=""></option>
 			<option value="Population">Population</option>
@@ -623,8 +620,7 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Mental_Health_Access">Mental Health Access</option>
 			<option value="2016_Presidential_Election">2016 Presidential Election</option>
 			<option value="Governor">Governor</option>
-		</select>&nbsp;<p>
-		Choose a value from this drop-down, or leave it blank. <br>
+		</select>&nbsp;
 		<select name="Murders" size=1>
 			<option value=""></option>
 			<option value="Total_murders">Total Murders</option>
@@ -635,8 +631,7 @@ Want to see three pieces of information (one from each table) for all states at 
 			<option value="Firearms">Firearm Murders</option>
 			<option value="Murders_per_capita">Murders Per Capita</option>
 			<option value="Gun_murders_per_capita">Gun Murders Per Capita</option>
-		</select>&nbsp;<p>
-		Choose a value from this drop-down, or leave it blank. <br>
+		</select>&nbsp;
 		<select name="GunControlLaws" size=1>
 			<option value=""></option>
 			<option value="Gun_Law_Rank">Gun Law Rank</option>
