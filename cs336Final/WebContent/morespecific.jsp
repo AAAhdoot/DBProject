@@ -9,11 +9,11 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
-<title>More Specific Data</title>
+<title>IllumiNation: The Specifics</title>
 </head>
 <body BACKGROUND = "city.png">
 
-<b><font color = "blue"><font size = "+10">Diving further into the data!</font></b></font>
+<b><font color = "navy"><font size = "+6">See more specific data.</font></b></font>
 
 <hr>
 
