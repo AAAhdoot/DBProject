@@ -20,7 +20,7 @@
     <!-- note the show.jsp will be invoked when the choice is made -->
 	<!-- The next lines give HTML for radio buttons being displayed -->
 	<br>
-	<b>Want to see information about average values?</b>
+	<mark>Want to see information about average values?</mark>
   <input type="submit" value="Yes!" />
 </form>
 <br>
