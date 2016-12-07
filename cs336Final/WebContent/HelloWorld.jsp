@@ -13,10 +13,14 @@
 </head>
 <body BACKGROUND = "city.png">
 
-<b><font color = "blue">Welcome to our final project for CS336 - Databases (Fall 2016).</b>
-We thought it'd be interesting to explore incidences of gun violence across the nation, and link in some data that isn't usually included when discussing gun violence.
-We collected a lot of data, some more interesting than others: how strict a state's gun laws are, the average unemployment rate in a state, abortion availability,
-the state's political leanings, incidences of gun violence (separated by type of gun), and more.</font>
+<b><font color = "blue"><font size = "+10">Welcome to our final project for CS336 - Databases (Fall 2016).</font></b></font>
+
+<hr>
+
+<br>
+We thought it'd be interesting to explore <b>incidences of gun violence</b> across the nation, and link in some data that isn't usually included when discussing gun violence.
+We collected a lot of data, some more interesting than others: how strict a state's gun laws are, the <b>average unemployment rate</b> in a state, abortion availability,
+the state's <b>political leanings</b>, incidences of gun violence (separated by type of gun), and more.
 <br>
 <br>
 <mark> Note: Data surrounding murders by different types of guns was not available for Florida.</mark> Our data comes from the FBI's Crime in the United States Report, which relies on data 
@@ -97,6 +101,8 @@ Have fun playing around on our site! There are a bunch of powerful queries that 
   <input type="submit" value="Show me more specific data." />
 </form>
 <br>
+
+<hr>
 
 <b>
 Show me the top X states with the highest values for a given attribute. </b>

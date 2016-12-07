@@ -9,9 +9,14 @@
 <link href=”bootstrap/css/bootstrap.min.css” rel=”stylesheet” type=”text/css” />
 <script type=”text/javascript” src=”bootstrap/js/bootstrap.min.js”></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>CS336 Final Project</title>
+<title>More Specific Data</title>
 </head>
 <body BACKGROUND = "city.png">
+
+<b><font color = "blue"><font size = "+10">Diving further into the data!</font></b></font>
+
+<hr>
+
 
 <br>
  <!-- Show html form to i) display something, ii) choose an action via a 
@@ -24,6 +29,8 @@
   <input type="submit" value="Yes!" />
 </form>
 <br>
+
+<hr>
 
 <b>Want to view all the demographic, gun violence, or gun control data for a given state? </b> Select your state below and the type of data you'd like to view.
 
